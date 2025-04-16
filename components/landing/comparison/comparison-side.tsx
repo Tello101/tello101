@@ -48,9 +48,13 @@ export const ComparisonSide = ({ title, description, isTello = false }: Comparis
 					)}
 				</motion.div>
 				{isTello ? (
-					<motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}>
-						<Image src='/images/tello101_text_logo.png' alt='Tello101' width={80} height={20} className='h-auto' />
-					</motion.div>
+					<motion.h3
+						className='text-xl font-bold text-primary'
+						whileHover={{ color: '#6b7280' }}
+						transition={{ duration: 0.2 }}
+					>
+						{t('tello')}
+					</motion.h3>
 				) : (
 					<motion.h3
 						className='text-xl font-bold text-gray-500'
