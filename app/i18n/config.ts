@@ -5,7 +5,7 @@ export const locales = ['ko', 'en'] as const;
 export type Locale = (typeof locales)[number];
 
 // 기본 로케일 정의
-export const defaultLocale: Locale = 'ko';
+export const defaultLocale: Locale = 'en';
 
 // 로케일 이름 매핑
 export const localeLabels: Record<Locale, string> = {

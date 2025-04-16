@@ -5,7 +5,7 @@ export default createMiddleware({
 	// 지원하는 로케일 목록
 	locales,
 
-	// 기본 로케일 (한국어)
+	// 기본 로케일 (영어)
 	defaultLocale,
 
 	// 필요할 때만 로케일 접두사 사용
