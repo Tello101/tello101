@@ -22,8 +22,16 @@ export const BenefitsSection = () => {
 					<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
 						<FadeIn direction='left' className='space-y-6'>
 							<h2 className='text-4xl font-bold'>{t('timezone.title')}</h2>
-							<p className='text-lg text-gray-600 leading-relaxed'>{t('timezone.p1')}</p>
-							<p className='text-lg text-gray-600 leading-relaxed'>{t('timezone.p2')}</p>
+							<ul className='space-y-4 mt-6'>
+								<li className='flex items-start'>
+									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
+									<p className='text-lg text-gray-600'>{t('timezone.p1')}</p>
+								</li>
+								<li className='flex items-start'>
+									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
+									<p className='text-lg text-gray-600'>{t('timezone.p2')}</p>
+								</li>
+							</ul>
 							<BrandButton size='lg' variant='default' className='text-white mt-4' asChild>
 								<Link href={`/${locale}/contact`} className='flex items-center'>
 									{t('timezone.cta')}
@@ -113,8 +121,16 @@ export const BenefitsSection = () => {
 						</FadeIn>
 						<FadeIn direction='left' delay={0.2} className='space-y-6 order-1 lg:order-2'>
 							<h2 className='text-4xl font-bold'>{t('personalized.title')}</h2>
-							<p className='text-lg text-gray-600 leading-relaxed'>{t('personalized.p1')}</p>
-							<p className='text-lg text-gray-600 leading-relaxed'>{t('personalized.p2')}</p>
+							<ul className='space-y-4 mt-6'>
+								<li className='flex items-start'>
+									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
+									<p className='text-lg text-gray-600'>{t('personalized.p1')}</p>
+								</li>
+								<li className='flex items-start'>
+									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
+									<p className='text-lg text-gray-600'>{t('personalized.p2')}</p>
+								</li>
+							</ul>
 							<BrandButton size='lg' variant='default' className='text-white mt-4' asChild>
 								<Link href={`/${locale}/contact`} className='flex items-center'>
 									{t('personalized.cta')}
@@ -130,15 +146,15 @@ export const BenefitsSection = () => {
 							<p className='text-lg text-gray-600 leading-relaxed'>{t('australia.p1')}</p>
 							<ul className='space-y-4 mt-6'>
 								<li className='flex items-start'>
-									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0' />
+									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
 									<p className='text-lg text-gray-600'>{t('australia.professionals')}</p>
 								</li>
 								<li className='flex items-start'>
-									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0' />
+									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
 									<p className='text-lg text-gray-600'>{t('australia.students')}</p>
 								</li>
 								<li className='flex items-start'>
-									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0' />
+									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
 									<p className='text-lg text-gray-600'>{t('australia.holiday')}</p>
 								</li>
 							</ul>

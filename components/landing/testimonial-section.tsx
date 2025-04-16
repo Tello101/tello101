@@ -36,8 +36,8 @@ export const TestimonialSection = () => {
 									</svg>
 									<p className='brand-quote mb-6'>{t('quote')}</p>
 									<div>
-										<p className='font-bold'>Jiwon</p>
-										<p className='text-sm text-gray-600'>Tello101 Student</p>
+										<p className='font-bold'>{t('name')}</p>
+										<p className='text-sm text-gray-600'>{t('title')}</p>
 									</div>
 								</div>
 								<div className='mt-8'>
