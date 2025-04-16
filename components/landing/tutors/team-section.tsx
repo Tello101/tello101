@@ -1,0 +1,49 @@
+'use client';
+
+import React from 'react';
+import Link from 'next/link';
+import { FadeIn } from '@/components/animations/fade-in';
+import { StaggerContainer } from '@/components/animations/stagger-container';
+import { BrandButton } from '@/components/ui/brand-button';
+import { SectionHeader } from '@/components/landing/section-header';
+import { TeamMemberCard } from '@/components/landing/tutors/team-member-card';
+
+export const TeamSection = () => {
+	return (
+		<section className='brand-section bg-gray-50'>
+			<div className='container'>
+				<FadeIn className='text-center mb-16'>
+					<SectionHeader title='Snapshot of Our Team' />
+				</FadeIn>
+
+				<StaggerContainer className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-10'>
+					<TeamMemberCard
+						name='Luca'
+						university='University of Sydney'
+						field='Law'
+						imagePath='/images/tutor_luca.webp'
+					/>
+
+					<TeamMemberCard name='Joanne' university='UNSW' field='Medicine' imagePath='/images/tutor_joanne.webp' />
+
+					<TeamMemberCard
+						name='Eric'
+						university='University of Sydney'
+						field='Law'
+						imagePath='/images/tutor_eric.webp'
+					/>
+
+					<TeamMemberCard name='Nathan' university='ANU' field='Languages' imagePath='/images/tutor_nathan.webp' />
+				</StaggerContainer>
+
+				<FadeIn className='text-center mt-12'>
+					<BrandButton size='lg' variant='default' asChild>
+						<Link href='/tutors' className='flex items-center'>
+							MEET OUR TEAM
+						</Link>
+					</BrandButton>
+				</FadeIn>
+			</div>
+		</section>
+	);
+};

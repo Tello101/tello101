@@ -1,0 +1,271 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 222.2 84% 4.9%;
+		--card: 0 0% 100%;
+		--card-foreground: 222.2 84% 4.9%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 222.2 84% 4.9%;
+		--primary: 214 100% 59%; /* #2980ff */
+		--primary-foreground: 0 0% 100%;
+		--secondary: 193 100% 72%; /* #71e2ff */
+		--secondary-foreground: 222.2 47.4% 11.2%;
+		--muted: 210 40% 96.1%;
+		--muted-foreground: 215.4 16.3% 46.9%;
+		--accent: 210 40% 96.1%;
+		--accent-foreground: 222.2 47.4% 11.2%;
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 210 40% 98%;
+		--border: 214.3 31.8% 91.4%;
+		--input: 214.3 31.8% 91.4%;
+		--ring: 221.2 83.2% 53.3%;
+		--radius: 1rem;
+	}
+
+	.dark {
+		--background: 222.2 84% 4.9%;
+		--foreground: 210 40% 98%;
+		--card: 222.2 84% 4.9%;
+		--card-foreground: 210 40% 98%;
+		--popover: 222.2 84% 4.9%;
+		--popover-foreground: 210 40% 98%;
+		--primary: 214 100% 59%; /* #2980ff */
+		--primary-foreground: 0 0% 100%;
+		--secondary: 193 100% 72%; /* #71e2ff */
+		--secondary-foreground: 222.2 47.4% 11.2%;
+		--muted: 217.2 32.6% 17.5%;
+		--muted-foreground: 215 20.2% 65.1%;
+		--accent: 217.2 32.6% 17.5%;
+		--accent-foreground: 210 40% 98%;
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 210 40% 98%;
+		--border: 217.2 32.6% 17.5%;
+		--input: 217.2 32.6% 17.5%;
+		--ring: 224.3 76.3% 48%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+		font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue',
+			'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji',
+			'Segoe UI Symbol', sans-serif;
+	}
+	body {
+		@apply bg-background text-foreground;
+		font-feature-settings: 'rlig' 1, 'calt' 1;
+	}
+	h1 {
+		@apply text-4xl font-bold md:text-5xl lg:text-6xl;
+	}
+	h2 {
+		@apply text-3xl font-bold md:text-4xl;
+	}
+	h3 {
+		@apply text-2xl font-bold;
+	}
+	p {
+		@apply leading-relaxed;
+	}
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* 브랜드 맞춤형 디자인 시스템 */
+.brand-gradient {
+	background: linear-gradient(135deg, #2980ff 0%, #71e2ff 100%);
+	box-shadow: 0 4px 10px rgba(41, 128, 255, 0.25);
+}
+
+.brand-gradient-light {
+	background: linear-gradient(135deg, #e6f3ff 0%, #d9f5ff 100%);
+}
+
+.brand-card {
+	@apply bg-white rounded-xl overflow-hidden border border-gray-100;
+	box-shadow: 0 10px 30px rgba(41, 128, 255, 0.08);
+	transition: all 0.3s ease;
+}
+
+.brand-card:hover {
+	box-shadow: 0 15px 40px rgba(41, 128, 255, 0.12);
+	transform: translateY(-4px);
+}
+
+.brand-section {
+	@apply py-20 md:py-28 lg:py-40;
+}
+
+.brand-heading {
+	@apply font-bold tracking-tight;
+	background: linear-gradient(135deg, #2980ff 0%, #71e2ff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.brand-stat-card {
+	@apply bg-white rounded-xl p-6 border border-gray-100;
+	box-shadow: 0 10px 30px rgba(41, 128, 255, 0.08);
+}
+
+.brand-stat-number {
+	@apply text-4xl font-bold mb-2;
+	background: linear-gradient(135deg, #2980ff 0%, #71e2ff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.brand-feature-icon {
+	@apply h-12 w-12 mb-4;
+	color: #2980ff;
+}
+
+.brand-testimonial {
+	@apply bg-white rounded-xl overflow-hidden;
+	box-shadow: 0 10px 30px rgba(41, 128, 255, 0.08);
+}
+
+.brand-quote {
+	@apply text-lg leading-relaxed text-gray-700;
+}
+
+.brand-menu-item {
+	@apply relative text-gray-700 font-medium transition-colors;
+}
+
+.brand-menu-item::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: -2px;
+	left: 0;
+	background-color: #2980ff;
+	transition: width 0.3s ease;
+}
+
+.brand-menu-item:hover {
+	@apply text-[#2980ff];
+}
+
+.brand-menu-item:hover::after {
+	width: 100%;
+}
+
+.brand-menu-item.active::after {
+	width: 100%;
+}
+
+.brand-mobile-menu {
+	@apply fixed inset-0 z-50 bg-white pt-16 pb-6 px-6 overflow-auto;
+	animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.brand-mobile-menu-item {
+	@apply text-lg font-medium py-4 border-b border-gray-100 transition-colors;
+}
+
+.brand-mobile-menu-item:hover {
+	@apply text-[#2980ff];
+}
+
+.brand-cta-section {
+	background: linear-gradient(135deg, #2980ff 0%, #71e2ff 100%);
+	@apply text-white py-24 md:py-32;
+}
+
+.brand-comparison-header {
+	@apply flex items-center justify-center py-3 px-6 rounded-xl mb-4 text-lg font-medium;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.brand-comparison-header-primary {
+	background: linear-gradient(135deg, #2980ff 0%, #71e2ff 100%);
+	@apply text-white;
+}
+
+.brand-comparison-header-secondary {
+	@apply bg-gray-100 text-gray-700;
+}
+
+.brand-check-circle {
+	@apply inline-flex items-center justify-center w-12 h-12 rounded-full mb-4;
+	background: linear-gradient(135deg, rgba(41, 128, 255, 0.1) 0%, rgba(113, 226, 255, 0.1) 100%);
+	color: #2980ff;
+}
+
+.brand-x-mark {
+	@apply inline-flex items-center justify-center w-12 h-12 rounded-full mb-4;
+	background: rgba(107, 114, 128, 0.1);
+	color: #6b7280;
+}
+
+.brand-video-container {
+	@apply rounded-xl overflow-hidden;
+	box-shadow: 0 10px 30px rgba(41, 128, 255, 0.08);
+}
+
+.brand-calendar {
+	@apply bg-white rounded-xl border border-gray-100 p-4;
+	box-shadow: 0 10px 30px rgba(41, 128, 255, 0.08);
+}
+
+.brand-calendar-header {
+	@apply flex justify-between items-center mb-4;
+}
+
+.brand-calendar-day {
+	@apply inline-flex items-center justify-center w-8 h-8 rounded-full text-sm transition-colors;
+}
+
+.brand-calendar-day.selected {
+	background: linear-gradient(135deg, #2980ff 0%, #71e2ff 100%);
+	@apply text-white;
+}
+
+.brand-calendar-day:hover:not(.selected) {
+	@apply bg-blue-50;
+}
+
+.brand-time-slot {
+	@apply flex items-center p-3 rounded-md mb-2 transition-colors;
+	background: rgba(41, 128, 255, 0.05);
+}
+
+.brand-time-slot:hover {
+	background: rgba(41, 128, 255, 0.1);
+}
+
+/* 반응형 타이포그래피 */
+@media (max-width: 640px) {
+	h1 {
+		@apply text-3xl;
+	}
+	h2 {
+		@apply text-2xl;
+	}
+	h3 {
+		@apply text-xl;
+	}
+}
