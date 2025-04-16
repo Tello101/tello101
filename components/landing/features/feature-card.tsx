@@ -14,7 +14,7 @@ interface FeatureCardProps {
 
 export function FeatureCard({ icon, title, features, className = '' }: FeatureCardProps) {
 	return (
-		<div className={`brand-card p-6 max-w-72 h-full gap-8 justify-between flex flex-col ${className}`}>
+		<div className={`brand-card p-6 max-w-72 w-full h-full gap-8 justify-between flex flex-col ${className}`}>
 			<div>
 				<div className='flex items-center mb-8 justify-center'>{icon}</div>
 				<h3 className='text-xl font-bold text-center'>{title}</h3>
