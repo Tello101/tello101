@@ -52,6 +52,13 @@
 }
 
 @layer base {
+	html,
+	body {
+		overflow-x: hidden;
+		position: relative;
+		width: 100%;
+	}
+
 	* {
 		@apply border-border;
 		font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue',
@@ -81,6 +88,8 @@
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 /* 브랜드 맞춤형 디자인 시스템 */
