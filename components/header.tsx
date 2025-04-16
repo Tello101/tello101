@@ -8,11 +8,16 @@ import { BrandButton } from '@/components/ui/brand-button';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import { LanguageSwitcher } from '@/components/language-switcher';
+import { useLocale } from 'next-intl';
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
 	const pathname = usePathname();
+	const locale = useLocale();
+	const t = useTranslations('Header');
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -29,8 +34,19 @@ export default function Header() {
 	}, [pathname]);
 
 	const isActive = (path: string) => {
-		if (path === '/' && pathname === '/') return true;
-		if (path !== '/' && pathname.startsWith(path)) return true;
+		// 언어 접두사(예: /en, /ko)를 제거한 경로
+		const pathWithoutLocale = pathname.replace(/^\/(en|ko)/, '');
+
+		// 루트 경로 ('/')인 경우 특별 처리
+		if (path === '/' && (pathname === '/' || pathname === '/en' || pathname === '/ko' || pathWithoutLocale === '')) {
+			return true;
+		}
+
+		// 다른 경로들 처리
+		if (path !== '/' && (pathname.includes(path) || pathWithoutLocale.startsWith(path))) {
+			return true;
+		}
+
 		return false;
 	};
 
@@ -46,30 +62,44 @@ export default function Header() {
 				</Link>
 
 				<nav className='hidden lg:flex items-center space-x-8'>
-					<Link href='/' className={`brand-menu-item ${isActive('/') ? 'active text-primary' : ''}`}>
-						Home
+					<Link href={`/${locale}`} className={`brand-menu-item ${isActive('/') ? 'active text-primary' : ''}`}>
+						{t('home')}
 					</Link>
-					<Link href='/services' className={`brand-menu-item ${isActive('/services') ? 'active text-primary' : ''}`}>
-						Services
+					<Link
+						href={`/${locale}/services`}
+						className={`brand-menu-item ${isActive('/services') ? 'active text-primary' : ''}`}
+					>
+						{t('services')}
 					</Link>
-					<Link href='/tutors' className={`brand-menu-item ${isActive('/tutors') ? 'active text-primary' : ''}`}>
-						Tutors
+					<Link
+						href={`/${locale}/tutors`}
+						className={`brand-menu-item ${isActive('/tutors') ? 'active text-primary' : ''}`}
+					>
+						{t('tutors')}
 					</Link>
-					<Link href='/pricing' className={`brand-menu-item ${isActive('/pricing') ? 'active text-primary' : ''}`}>
-						Pricing
+					<Link
+						href={`/${locale}/pricing`}
+						className={`brand-menu-item ${isActive('/pricing') ? 'active text-primary' : ''}`}
+					>
+						{t('pricing')}
 					</Link>
-					<Link href='/faq' className={`brand-menu-item ${isActive('/faq') ? 'active text-primary' : ''}`}>
-						FAQ
+					<Link href={`/${locale}/faq`} className={`brand-menu-item ${isActive('/faq') ? 'active text-primary' : ''}`}>
+						{t('faq')}
 					</Link>
-					<Link href='/contact' className={`brand-menu-item ${isActive('/contact') ? 'active text-primary' : ''}`}>
-						Contact
+					<Link
+						href={`/${locale}/contact`}
+						className={`brand-menu-item ${isActive('/contact') ? 'active text-primary' : ''}`}
+					>
+						{t('contact')}
 					</Link>
-					<BrandButton size='sm' variant='default' className='text-sm'>
-						Book Trial
+					<LanguageSwitcher />
+					<BrandButton size='sm' variant='default' className='text-sm' asChild>
+						<Link href={`/${locale}/contact`}>{t('bookTrial')}</Link>
 					</BrandButton>
 				</nav>
 
 				<div className='lg:hidden flex items-center space-x-2'>
+					<LanguageSwitcher />
 					<Button variant='ghost' size='icon' onClick={() => setIsMenuOpen(!isMenuOpen)} className='text-gray-700'>
 						{isMenuOpen ? <X className='h-10 w-10' /> : <Menu className='h-10 w-10' />}
 					</Button>
@@ -89,56 +119,56 @@ export default function Header() {
 						<div className='bg-white/98 backdrop-blur shadow-lg border-t border-gray-100 bg-white'>
 							<div className='container py-4 flex flex-col space-y-4 max-h-[80vh] overflow-y-auto'>
 								<Link
-									href='/'
+									href={`/${locale}`}
 									className={`py-3 px-2 border-b border-gray-100 text-lg ${
 										isActive('/') ? 'text-primary font-medium' : 'text-gray-800'
 									}`}
 								>
-									Home
+									{t('home')}
 								</Link>
 								<Link
-									href='/services'
+									href={`/${locale}/services`}
 									className={`py-3 px-2 border-b border-gray-100 text-lg ${
 										isActive('/services') ? 'text-primary font-medium' : 'text-gray-800'
 									}`}
 								>
-									Services
+									{t('services')}
 								</Link>
 								<Link
-									href='/tutors'
+									href={`/${locale}/tutors`}
 									className={`py-3 px-2 border-b border-gray-100 text-lg ${
 										isActive('/tutors') ? 'text-primary font-medium' : 'text-gray-800'
 									}`}
 								>
-									Tutors
+									{t('tutors')}
 								</Link>
 								<Link
-									href='/pricing'
+									href={`/${locale}/pricing`}
 									className={`py-3 px-2 border-b border-gray-100 text-lg ${
 										isActive('/pricing') ? 'text-primary font-medium' : 'text-gray-800'
 									}`}
 								>
-									Pricing
+									{t('pricing')}
 								</Link>
 								<Link
-									href='/faq'
+									href={`/${locale}/faq`}
 									className={`py-3 px-2 border-b border-gray-100 text-lg ${
 										isActive('/faq') ? 'text-primary font-medium' : 'text-gray-800'
 									}`}
 								>
-									FAQ
+									{t('faq')}
 								</Link>
 								<Link
-									href='/contact'
+									href={`/${locale}/contact`}
 									className={`py-3 px-2 border-b border-gray-100 text-lg ${
 										isActive('/contact') ? 'text-primary font-medium' : 'text-gray-800'
 									}`}
 								>
-									Contact
+									{t('contact')}
 								</Link>
 								<div className='pt-2 pb-2'>
-									<BrandButton size='default' variant='default' className='w-full'>
-										Book Trial
+									<BrandButton size='default' variant='default' className='w-full' asChild>
+										<Link href={`/${locale}/contact`}>{t('bookTrial')}</Link>
 									</BrandButton>
 								</div>
 							</div>

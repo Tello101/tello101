@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslations, useLocale } from 'next-intl';
 import { BrandButton } from '@/components/ui/brand-button';
 import { Button } from '@/components/ui/button';
 import { FadeIn } from '@/components/animations/fade-in';
@@ -10,6 +11,9 @@ import { Clock, BadgeCheck, Globe } from 'lucide-react';
 import { PersonalizedLessonUI } from '@/components/landing/benefits/personalized-lesson';
 
 export const BenefitsSection = () => {
+	const t = useTranslations('Home.Benefits');
+	const locale = useLocale();
+
 	return (
 		<section className='brand-section bg-white'>
 			<div className='container'>
@@ -17,18 +21,12 @@ export const BenefitsSection = () => {
 					{/* Card 1 - Time Zone */}
 					<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
 						<FadeIn direction='left' className='space-y-6'>
-							<h2 className='text-4xl font-bold'>Built for Your Time Zone</h2>
-							<p className='text-lg text-gray-600 leading-relaxed'>
-								Tello101's Australia-based tutors operate in a time zone ideal for learners in East Asia, with just a
-								1–3 hour time difference.
-							</p>
-							<p className='text-lg text-gray-600 leading-relaxed'>
-								This means lessons easily fit into your busy day, with flexible 25- or 50-minute options that work
-								around your schedule.
-							</p>
+							<h2 className='text-4xl font-bold'>{t('timezone.title')}</h2>
+							<p className='text-lg text-gray-600 leading-relaxed'>{t('timezone.p1')}</p>
+							<p className='text-lg text-gray-600 leading-relaxed'>{t('timezone.p2')}</p>
 							<BrandButton size='lg' variant='default' className='text-white mt-4' asChild>
-								<Link href='/contact' className='flex items-center'>
-									BOOK TRIAL NOW
+								<Link href={`/${locale}/contact`} className='flex items-center'>
+									{t('timezone.cta')}
 								</Link>
 							</BrandButton>
 						</FadeIn>
@@ -114,16 +112,12 @@ export const BenefitsSection = () => {
 							</div>
 						</FadeIn>
 						<FadeIn direction='left' delay={0.2} className='space-y-6 order-1 lg:order-2'>
-							<h2 className='text-4xl font-bold'>1:1 Personalised lessons to speak like a native</h2>
-							<p className='text-lg text-gray-600 leading-relaxed'>
-								From professional communication to casual conversations, master English for every context.
-							</p>
-							<p className='text-lg text-gray-600 leading-relaxed'>
-								Tailor your lessons to your career, interests, and learning goals for a fully customised experience.
-							</p>
+							<h2 className='text-4xl font-bold'>{t('personalized.title')}</h2>
+							<p className='text-lg text-gray-600 leading-relaxed'>{t('personalized.p1')}</p>
+							<p className='text-lg text-gray-600 leading-relaxed'>{t('personalized.p2')}</p>
 							<BrandButton size='lg' variant='default' className='text-white mt-4' asChild>
-								<Link href='/contact' className='flex items-center'>
-									BOOK TRIAL NOW
+								<Link href={`/${locale}/contact`} className='flex items-center'>
+									{t('personalized.cta')}
 								</Link>
 							</BrandButton>
 						</FadeIn>
@@ -132,34 +126,25 @@ export const BenefitsSection = () => {
 					{/* Card 3 - Australia */}
 					<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
 						<FadeIn direction='left' className='space-y-6'>
-							<h2 className='text-4xl font-bold'>Australia at your fingertips - boost your confidence</h2>
-							<p className='text-lg text-gray-600 leading-relaxed'>
-								With Tello101's authentic Australian content, master the accent, culture and slang while honing your
-								spoken English skills.
-							</p>
+							<h2 className='text-4xl font-bold'>{t('australia.title')}</h2>
+							<p className='text-lg text-gray-600 leading-relaxed'>{t('australia.p1')}</p>
 							<ul className='space-y-4 mt-6'>
 								<li className='flex items-start'>
 									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0' />
-									<p className='text-lg text-gray-600'>
-										For professionals, connect with young Australians in your field of work.
-									</p>
+									<p className='text-lg text-gray-600'>{t('australia.professionals')}</p>
 								</li>
 								<li className='flex items-start'>
 									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0' />
-									<p className='text-lg text-gray-600'>
-										For students, gain first-hand insights from Australian university students.
-									</p>
+									<p className='text-lg text-gray-600'>{t('australia.students')}</p>
 								</li>
 								<li className='flex items-start'>
 									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0' />
-									<p className='text-lg text-gray-600'>
-										For working holiday makers, unlock tips to maximise your Australian experience.
-									</p>
+									<p className='text-lg text-gray-600'>{t('australia.holiday')}</p>
 								</li>
 							</ul>
 							<BrandButton size='lg' variant='default' className='text-white mt-4' asChild>
-								<Link href='/contact' className='flex items-center'>
-									BOOK TRIAL NOW
+								<Link href={`/${locale}/contact`} className='flex items-center'>
+									{t('australia.cta')}
 								</Link>
 							</BrandButton>
 						</FadeIn>

@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 interface ComparisonSideProps {
 	title: string;
@@ -11,6 +12,8 @@ interface ComparisonSideProps {
 }
 
 export const ComparisonSide = ({ title, description, isTello = false }: ComparisonSideProps) => {
+	const t = useTranslations('Home.Comparison');
+
 	return (
 		<motion.div
 			className={`p-6 md:p-8 relative ${isTello ? 'border-b md:border-b-0 md:border-r border-gray-100' : 'bg-gray-50'}`}
@@ -54,7 +57,7 @@ export const ComparisonSide = ({ title, description, isTello = false }: Comparis
 						whileHover={{ color: '#6b7280' }}
 						transition={{ duration: 0.2 }}
 					>
-						Other Platforms
+						{t('others')}
 					</motion.h3>
 				)}
 			</div>

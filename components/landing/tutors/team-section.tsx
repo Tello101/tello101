@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { useTranslations, useLocale } from 'next-intl';
 import { FadeIn } from '@/components/animations/fade-in';
 import { StaggerContainer } from '@/components/animations/stagger-container';
 import { BrandButton } from '@/components/ui/brand-button';
@@ -9,11 +10,14 @@ import { SectionHeader } from '@/components/landing/section-header';
 import { TeamMemberCard } from '@/components/landing/tutors/team-member-card';
 
 export const TeamSection = () => {
+	const t = useTranslations('Home.Team');
+	const locale = useLocale();
+
 	return (
 		<section className='brand-section bg-gray-50'>
 			<div className='container'>
 				<FadeIn className='text-center mb-16'>
-					<SectionHeader title='Snapshot of Our Team' />
+					<SectionHeader title={t('title')} />
 				</FadeIn>
 
 				<StaggerContainer className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-10'>
@@ -38,8 +42,8 @@ export const TeamSection = () => {
 
 				<FadeIn className='text-center mt-12'>
 					<BrandButton size='lg' variant='default' asChild>
-						<Link href='/tutors' className='flex items-center'>
-							MEET OUR TEAM
+						<Link href={`/${locale}/tutors`} className='flex items-center'>
+							{t('cta')}
 						</Link>
 					</BrandButton>
 				</FadeIn>

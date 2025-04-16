@@ -1,26 +1,7 @@
-'use client';
-
-import React from 'react';
-import { HeroSection } from '@/components/landing/hero/hero-section';
-import { FeaturesSection } from '@/components/landing/features/features-section';
-import { ComparisonSection } from '@/components/landing/comparison/comparison-section';
-import { BenefitsSection } from '@/components/landing/benefits/benefits-section';
-import { TeamSection } from '@/components/landing/tutors/team-section';
-import { VideoSection } from '@/components/landing/video-section';
-import { TestimonialSection } from '@/components/landing/testimonial-section';
-import { CtaSection } from '@/components/landing/cta-section';
+import { redirect } from 'next/navigation';
+import { defaultLocale } from '@/app/i18n';
 
 export default function Home() {
-	return (
-		<div className='flex flex-col min-h-screen'>
-			<HeroSection />
-			<FeaturesSection />
-			<ComparisonSection />
-			<BenefitsSection />
-			<TeamSection />
-			<VideoSection />
-			<TestimonialSection />
-			<CtaSection />
-		</div>
-	);
+	// 항상 기본 로케일 경로로 리다이렉트
+	redirect(`/${defaultLocale}`);
 }

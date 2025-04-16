@@ -1,12 +1,14 @@
 'use client';
 
 import React, { useRef, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import { FadeIn } from '@/components/animations/fade-in';
 import { SectionHeader } from '@/components/landing/section-header';
 
 export const VideoSection = () => {
 	const videoRef = useRef<HTMLVideoElement>(null);
 	const videoSectionRef = useRef<HTMLElement>(null);
+	const t = useTranslations('Home.Video');
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -37,7 +39,7 @@ export const VideoSection = () => {
 		<section className='brand-section bg-white' ref={videoSectionRef}>
 			<div className='container'>
 				<FadeIn className='text-center mb-16'>
-					<SectionHeader title="Here's a recording of a real Tello101 lesson:" />
+					<SectionHeader title={t('title')} />
 				</FadeIn>
 
 				<FadeIn>
