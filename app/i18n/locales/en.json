@@ -144,5 +144,282 @@
 			"title": "Experience a trial lesson with us now.",
 			"cta": "Book Now"
 		}
+	},
+	"Services": {
+		"hero": {
+			"create_journey": "Create your own English journey, anytime, anywhere",
+			"english_made_easy": "English made easy with Tello101"
+		},
+		"steps": {
+			"title": "How our platform works",
+			"step1_title": "Step 1: Select a lesson package",
+			"step1_desc": "Choose a package that suits your pace and learning goals.",
+			"step2_title": "Step 2: Choose a tutor",
+			"step2_desc": "Pick a tutor from our diverse network whose expertise aligns with your interests",
+			"step3_title": "Step 3: Choose a Time",
+			"step3_desc": "Available 365 days a year, with flexible time slots to fit your lifestyle.",
+			"step4_title": "Step 4: Select your lesson content",
+			"step4_desc": "Choose your lesson focus - Australian topics, open discussions or interest-based content, designed by TESOL-certified academics.",
+			"step5_title": "Step 5: Learn!",
+			"step5_desc": "Set your lesson preferences and enter the lesson space. Receive immediate feedback and corrections from your tutor.",
+			"step6_title": "Step 6: Review feedback",
+			"step6_desc": "Review personalised lesson notes and feedback from your tutor."
+		},
+		"enquire_now_cta": "ENQUIRE NOW"
+	},
+	"Tutors": {
+		"hero": {
+			"title": "We bring Australia's best tutors to you.",
+			"subtitle": "We are a community of native English speakers from Australia's top universities, committed to helping you achieve your English goals through personalised online lessons."
+		},
+		"points": {
+			"box1": {
+				"title": "Detailed 1:1 feedback",
+				"desc": "Receive all-in-one written reports for each lesson covering vocabulary, grammar, pronunciation, and fluency."
+			},
+			"box2": {
+				"title": "Top Credentials, Proven Results",
+				"desc": "We select our native tutors through a rigorous 3-round screening process with a competitive 8:1 acceptance rate. All our tutors are studying or have graduated from the top Australian universities like Sydney University, University of Melbourne, and UNSW."
+			},
+			"box3": {
+				"title": "Business? Design? Medicine? We've got you covered.",
+				"desc": "From consultants to lawyers, our tutors have experience at leading brands such as Apple, A&O Shearman, Marriott, ANZ, Macquarie Group, and Nestlé."
+			},
+			"box4": {
+				"title": "Scared to speak only English? We have bilingual tutors.",
+				"desc": "Choose a bilingual tutor to help you feel more comfortable with conversation."
+			}
+		},
+		"find_tutors": {
+			"title": "Find the perfect tutor for you now"
+		},
+		"reviews": {
+			"title": "Over 300+ satisfied students"
+		}
+	},
+	"Pricing": {
+		"common": {
+			"minutes25": "25 minutes",
+			"minutes50": "50 minutes",
+			"lesson1": "1 lesson",
+			"lessons4": "4 lessons",
+			"lessons8": "8 lessons",
+			"lessons20": "20 lessons",
+			"lessons40": "40 lessons",
+			"discount67": "67.5% off!"
+		},
+		"pricing_info": {
+			"title": "Your Path to English Fluency Starts Here",
+			"subtitle": "Find the perfect plan to fit your learning goals and schedule.",
+			"25minutes": [
+				{
+					"price": "$160",
+					"per_lesson": "$40 per lesson",
+					"per_lesson_ko": "회당 $40",
+					"valid": "Valid for 30 days",
+					"valid_ko": "유효기간 30일"
+				},
+				{
+					"price": "$296",
+					"per_lesson": "$37 per lesson",
+					"per_lesson_ko": "회당 $37",
+					"valid": "Valid for 60 days",
+					"valid_ko": "유효기간 60일"
+				},
+				{
+					"price": "$680",
+					"per_lesson": "$34 per lesson",
+					"per_lesson_ko": "회당 $34",
+					"valid": "Valid for 120 days",
+					"valid_ko": "유효기간 120일"
+				},
+				{
+					"price": "$1,200",
+					"per_lesson": "$30 per lesson",
+					"per_lesson_ko": "회당 $30",
+					"valid": "Valid for 250 days",
+					"valid_ko": "유효기간 250일"
+				}
+			],
+			"50minutes": [
+				{
+					"price": "$284",
+					"per_lesson": "$71 per lesson",
+					"per_lesson_ko": "회당 $71",
+					"valid": "Valid for 30 days",
+					"valid_ko": "유효기간 30일"
+				},
+				{
+					"price": "$520",
+					"per_lesson": "$65 per lesson",
+					"per_lesson_ko": "회당 $65",
+					"valid": "Valid for 60 days",
+					"valid_ko": "유효기간 60일"
+				},
+				{
+					"price": "$1,140",
+					"per_lesson": "$57 per lesson",
+					"per_lesson_ko": "회당 $57",
+					"valid": "Valid for 120 days",
+					"valid_ko": "유효기간 120일"
+				},
+				{
+					"price": "$2,120",
+					"per_lesson": "$53 per lesson",
+					"per_lesson_ko": "회당 $53",
+					"valid": "Valid for 250 days",
+					"valid_ko": "유효기간 250일"
+				}
+			]
+		},
+		"trial_offer": {
+			"title": "Tello101 Trial Offer",
+			"subtitle": "Get a first-hand experience of our tutoring, no strings attached.",
+			"boxes": [
+				{
+					"title": "100% access to Tello101 resources and tutors.",
+					"desc": "Our trial lessons are conducted in the same way as a regular lesson, ensuring you can experience the full quality of our tutors."
+				},
+				{
+					"title": "10-day expiry",
+					"desc": "Use your lesson credits within 30 days. After this, continue learning with one of our other packages."
+				},
+				{
+					"title": "Same experience as regular lessons",
+					"desc": "Trial lessons follow the same structure and standards as our paid sessions."
+				}
+			],
+			"25_price": "$13",
+			"50_price": "$284"
+		}
+	},
+	"Contact": {
+		"name": "Name",
+		"email": "Email",
+		"kakao_id": "KakaoTalk ID",
+		"preferred_tutor": "Preferred Tutor",
+		"level": "English Level:",
+		"level_options": {
+			"beginner": "Complete Beginner",
+			"lower_intermediate": "Can speak simple sentences",
+			"upper_intermediate": "Can handle everyday conversations",
+			"advanced": "Near-native level"
+		},
+		"goals": "Lesson Goals:",
+		"goals_options": {
+			"native": "I want to speak like a native",
+			"business": "I want to learn business English",
+			"conversation": "I want to have natural everyday conversations",
+			"other": "I have other goals"
+		},
+		"availability": "Available Time Slots"
+	},
+	"FAQ": {
+		"question_1": {
+			"question": "1. What happens if I cancel a lesson?",
+			"answer": [
+				"If you need to cancel a lesson, you can do so at least 24 hours before the scheduled time free of charge. You are also free to reschedule your lesson to a new time that better suits you.",
+				"If you cancel a lesson less than 24 hours before the start time, the lesson will be deducted from your balance as if it had been completed.",
+				"To cancel or reschedule, simply log in to your account, navigate to your upcoming lessons, and select a new time that works for you."
+			]
+		},
+		"question_2": {
+			"question": "2. What happens if my tutor cancels a lesson?",
+			"answer": [
+				"If your tutor cancels a lesson for any reason, you will not lose the lesson, and you will have the flexibility to reschedule with the same tutor or a different tutor at a time that works for you.",
+				"We strive to ensure reliability and consistency in our tutoring services, and tutor cancellations are rare. However, if your tutor is unavailable, you will be notified in advance, and you can rebook your lesson at your convenience."
+			]
+		},
+		"question_3": {
+			"question": "3. Is there an expiry date for the lessons?",
+			"answer": [
+				"Yes, lessons must be used within the specified validity period. Each lesson package has a different expiration period depending on the type of package purchased, so please check the details carefully on our Tutor [hyperlinked] page before making a purchase.",
+				"Unused lessons cannot be extended or refunded after the expiration date, so we encourage students to plan their schedules accordingly. If you are unsure about your schedule or need assistance with booking your lessons in time, feel free to reach out to our support team for guidance."
+			]
+		},
+		"question_4": {
+			"question": "4. Can I change my tutor?",
+			"answer": [
+				"Yes! When you purchase lessons, you are not committing to a specific tutor. Instead, you are free to book lessons with different tutors at any time based on your preferences and learning needs.",
+				"We encourage students to try different tutors to gain exposure to a variety of teaching styles, backgrounds, and perspectives. This can be particularly beneficial for improving adaptability in real-world Australian conversations.",
+				"If you find a tutor that you enjoy working with, you are welcome to continue booking lessons with them. However, if you'd like to try a new tutor at any time, you can easily do so through our booking system."
+			]
+		},
+		"question_5": {
+			"question": "5. What happens if I'm late to a lesson?",
+			"answer": [
+				"If you are late, your tutor will wait for you for up to 10 minutes for a 25 minute lesson and 20 minutes for a 50 minute lesson. However, the lesson will still end at the originally scheduled time. If you do not join the lesson within this time, the lesson will be considered completed and deducted from your balance.",
+				"We recommend logging in a few minutes early to ensure your internet connection and setup are working properly. If you anticipate being late, please inform your tutor in advance through our platform."
+			]
+		},
+		"question_6": {
+			"question": "6. What happens if I experience technical issues during a lesson?",
+			"answer": [
+				"If you encounter technical difficulties (e.g., internet connection problems, microphone issues), please try to resolve them as quickly as possible.",
+				"If the issue occurs on your side and prevents you from completing the lesson, the lesson will be counted as used.",
+				"If the issue is on the tutor's side or our platform's side, you will not lose the lesson and will be given the option to reschedule.",
+				"To avoid technical disruptions, we recommend checking your internet connection and device settings before each lesson. If you need further assistance, our support team is happy to help."
+			]
+		},
+		"question_7": {
+			"question": "7. Do I need to prepare anything before my lesson?",
+			"answer": [
+				"While our tutors will guide you through each session, we recommend that you:",
+				"Decide on your lesson focus. Let your tutor know what you'd like to work on (e.g., pronunciation, business English, casual conversation).",
+				"Review any assigned materials. If your tutor provides pre-lesson materials, take some time to go through them.",
+				"Ensure a quiet environment. Using a headset and sitting in a distraction-free space can help you get the most out of your lesson.",
+				"If you're unsure what to focus on, don't worry—your tutor will help tailor the lesson to your needs."
+			]
+		},
+		"question_8": {
+			"question": "8. How do I book a lesson?",
+			"answer": [
+				"Booking a lesson is easy:",
+				"Make an enquiry on our Contact Us Page",
+				"We match you with a tutor based on your interests and their availability",
+				"Purchase a package of lessons that suits your learning goals.",
+				"Confirm your booking",
+				"You'll receive a confirmation email with the lesson details. If you need to reschedule, you can do so through your account at least 24 hours before the lesson time."
+			]
+		},
+		"question_9": {
+			"question": "9. How are tutors selected?",
+			"answer": [
+				"Our tutors are native speakers who are either attending or have graduated from Australia's leading universities. Each tutor undergoes a rigorous 3-round screening process run by our TESOL-qualified tutor leadership team to ensure they have strong teaching skills and can provide high-quality lessons.",
+				"We also encourage tutors to personalize their teaching styles based on students' goals, whether that's preparing for a job interview, improving conversational fluency, or understanding Australian culture."
+			]
+		},
+		"question_10": {
+			"question": "10. What if I'm not satisfied with my tutor?",
+			"answer": [
+				"If you feel that your tutor isn't the right fit for you, you are free to switch tutors at any time. Since lessons are booked individually, you are never locked into a single tutor.",
+				"We also welcome feedback on your tutoring experience. If you have specific concerns, please reach out to our support team, and we'll help match you with a tutor that better fits your learning style and goals."
+			]
+		},
+		"question_11": {
+			"question": "11. Can I request a tutor who specializes in my industry?",
+			"answer": [
+				"Yes! Many of our tutors have backgrounds in various professional fields, such as finance, law, technology, healthcare, and education. While all tutors can assist with general English, some may be better suited for industry-specific English or professional communication.",
+				"To find a tutor with expertise in your field, check their profile descriptions or contact our support team for recommendations."
+			]
+		},
+		"question_12": {
+			"question": "12. Do you offer trial lessons?",
+			"answer": [
+				"Yes! We offer discounted trial lessons for first-time students before purchasing a lesson package.",
+				"The trial lesson follows the same format as a regular lesson and allows you to:",
+				"Meet our tutors and experience our teaching style.",
+				"Discuss your learning goals.",
+				"Receive initial feedback on your English proficiency.",
+				"If you decide to continue, you can then purchase a lesson package that fits your schedule."
+			]
+		},
+		"question_13": {
+			"question": "13. What payment methods do you accept?",
+			"answer": [
+				"We accept Kakao Pay, WeChat Pay, Alipay, and international credit/debit cards. All payments are processed securely through our platform.",
+				"If you encounter any issues with payment, please contact our support team, and we'll be happy to assist."
+			]
+		}
 	}
 }
