@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
+import { MailIcon, MapPinIcon } from 'lucide-react';
 
 export default function Footer() {
 	const t = useTranslations('Footer');
@@ -51,8 +52,13 @@ export default function Footer() {
 					<div>
 						<FooterHeading>{t('contact')}</FooterHeading>
 						<ul className='mt-4 space-y-3'>
-							<li>
-								<FooterLink href='mailto:tello101.official@gmail.com'>tello101.official@gmail.com</FooterLink>
+							<li className='text-gray-600 hover:text-primary transition-colors flex gap-1 items-center  '>
+								<MailIcon className='w-4 h-4 ' />
+								<Link href='mailto:tello101.official@gmail.com'>tello101.official@gmail.com</Link>
+							</li>
+							<li className='text-gray-600 flex gap-1 items-center'>
+								<MapPinIcon className='w-4 h-4' />
+								<p>Sydney, Australia</p>
 							</li>
 						</ul>
 					</div>
