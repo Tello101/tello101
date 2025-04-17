@@ -192,7 +192,76 @@
 			}
 		},
 		"find_tutors": {
-			"title": "지금 나에게 딱 맞는 튜터를 찾아보세요"
+			"title": "지금 나에게 딱 맞는 튜터를 찾아보세요",
+			"tutors_list": {
+				"interests": "관심사:",
+				"current": "현재:",
+				"tutors": [
+					{
+						"name": "Luca",
+						"university": "시드니대학교",
+						"major": "예술 및 법학",
+						"interests": "#테니스 #기술 #음식",
+						"current": "법학과 재학 중"
+					},
+					{
+						"name": "Henry",
+						"university": "시드니대학교",
+						"major": "상업 및 고급 연구",
+						"interests": "#헬스 #시계 #포뮬러1",
+						"current": "데이터 과학자"
+					},
+					{
+						"name": "Joanne",
+						"university": "뉴사우스웨일스대학교",
+						"major": "의학",
+						"interests": "#캠핑 #달리기 #등산",
+						"current": "의사"
+					},
+					{
+						"name": "Kelly",
+						"university": "시드니대학교",
+						"major": "마케팅 및 회계",
+						"interests": "#여행 #필라테스 #댄스",
+						"current": "비즈니스 최적화 분석가"
+					},
+					{
+						"name": "Chris",
+						"university": "라트로브대학교",
+						"major": "치의학",
+						"interests": "#음악 #테니스 #요리",
+						"current": "치과의사"
+					},
+					{
+						"name": "Jess",
+						"university": "시드니대학교",
+						"major": "교육 및 법학",
+						"interests": "#웨이트트레이닝 #필라테스 #건강과 피트니스",
+						"current": "교사"
+					},
+					{
+						"name": "Nathan",
+						"university": "호주국립대학교",
+						"major": "국제 관계학",
+						"interests": "#크리켓 #언어 #골키퍼",
+						"current": "교사"
+					},
+					{
+						"name": "Eric",
+						"university": "시드니대학교",
+						"major": "금융 및 법학",
+						"interests": "#스포츠 #역사 #여행",
+						"current": "변호사"
+					},
+					{
+						"name": "David",
+						"university": "시드니대학교",
+						"major": "항공우주공학",
+						"interests": "#헬스 #여행 #역사",
+						"current": "로보틱스 엔지니어"
+					}
+				]
+			}
 		},
 		"reviews": {
 			"title": "이미 300명 넘는 학생들이 만족했어요"
@@ -299,21 +368,23 @@
 		"email": "이메일",
 		"kakao_id": "카카오톡 ID",
 		"preferred_tutor": "선호하는 튜터",
-		"level": "영어 레벨:",
+		"level": "영어 레벨",
 		"level_options": {
 			"beginner": "완전 초보예요",
 			"lower_intermediate": "간단한 문장은 구사 가능해요",
 			"upper_intermediate": "일상 대화는 웬만큼 해요",
 			"advanced": "거의 원어민 수준이에요"
 		},
-		"goals": "수업 목표:",
+		"goals": "수업 목표",
 		"goals_options": {
 			"native": "원어민처럼 말하고 싶어요",
 			"business": "비즈니스 영어를 배우고 싶어요",
 			"conversation": "일상 회화를 자연스럽게 하고 싶어요",
 			"other": "그 외 다른 목표가 있어요"
 		},
-		"availability": "수업 가능 시간대"
+		"availability": "수업 가능 시간대",
+		"kakao_contact": "카카오톡 문의",
+		"submit": "보내기"
 	},
 	"FAQ": {
 		"question_1": {

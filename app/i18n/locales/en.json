@@ -191,7 +191,76 @@
 			}
 		},
 		"find_tutors": {
-			"title": "Find the perfect tutor for you now"
+			"title": "Find the perfect tutor for you now",
+			"tutors_list": {
+				"interests": "Interests:",
+				"current": "Current:",
+				"tutors": [
+					{
+						"name": "Luca",
+						"university": "University of Sydney",
+						"major": "Arts and Law",
+						"interests": "#tennis #technology #food",
+						"current": "Law student"
+					},
+					{
+						"name": "Henry",
+						"university": "University of Sydney",
+						"major": "Commerce and Advanced Studies",
+						"interests": "#gym #watches #formula1",
+						"current": "Data Scientist"
+					},
+					{
+						"name": "Joanne",
+						"university": "University of New South Wales",
+						"major": "Medicine",
+						"interests": "#camping #running #hiking",
+						"current": "Doctor"
+					},
+					{
+						"name": "Kelly",
+						"university": "University of Sydney",
+						"major": "Marketing and Accounting",
+						"interests": "#travel #pilates #dance",
+						"current": "Business Optimisation Analyst"
+					},
+					{
+						"name": "Chris",
+						"university": "La Trobe University",
+						"major": "Dentistry",
+						"interests": "#music #tennis #cooking",
+						"current": "Dentist"
+					},
+					{
+						"name": "Jess",
+						"university": "University of Sydney",
+						"major": "Education and Law",
+						"interests": "#weighttraining #pilates #healthandfitness",
+						"current": "Teacher"
+					},
+					{
+						"name": "Nathan",
+						"university": "Australian National University",
+						"major": "International Relations",
+						"interests": "#Cricket #Languages #Goalkeeping",
+						"current": "Teacher"
+					},
+					{
+						"name": "Eric",
+						"university": "University of Sydney",
+						"major": "Finance and Law",
+						"interests": "#sport #history #travel",
+						"current": "Lawyer"
+					},
+					{
+						"name": "David",
+						"university": "University of Sydney",
+						"major": "Aeronautical engineering",
+						"interests": "#gym #travel #history",
+						"current": "Robotics Engineer"
+					}
+				]
+			}
 		},
 		"reviews": {
 			"title": "Over 300+ satisfied students"
@@ -298,21 +367,23 @@
 		"email": "Email",
 		"kakao_id": "KakaoTalk ID",
 		"preferred_tutor": "Preferred Tutor",
-		"level": "English Level:",
+		"level": "English Level",
 		"level_options": {
 			"beginner": "Complete Beginner",
 			"lower_intermediate": "Can speak simple sentences",
 			"upper_intermediate": "Can handle everyday conversations",
 			"advanced": "Near-native level"
 		},
-		"goals": "Lesson Goals:",
+		"goals": "Lesson Goals",
 		"goals_options": {
 			"native": "I want to speak like a native",
 			"business": "I want to learn business English",
 			"conversation": "I want to have natural everyday conversations",
 			"other": "I have other goals"
 		},
-		"availability": "Available Time Slots"
+		"availability": "Available Time Slots",
+		"kakao_contact": "Contact us on KakaoTalk",
+		"submit": "Send"
 	},
 	"FAQ": {
 		"question_1": {
