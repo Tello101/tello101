@@ -35,7 +35,7 @@
 	},
 	"Home": {
 		"Hero": {
-			"title": "Tello101, Australia's #1 English Tutoring Platform",
+			"title": "Tello101,\nAustralia's #1\nEnglish Tutoring Platform",
 			"subtitle": "1:1 online lessons with native speakers from Australia's top universities.",
 			"cta": "Book Trial Now",
 			"stats": {
@@ -107,23 +107,23 @@
 		},
 		"Benefits": {
 			"timezone": {
-				"title": "Built for Your Time Zone",
+				"title": "Built for <highlight>Your Time Zone</highlight>",
 				"p1": "Tello101's Australia-based tutors operate in a time zone ideal for learners in East Asia, with just a 1–3 hour time difference.",
 				"p2": "This means lessons easily fit into your busy day, with flexible 25- or 50-minute options that work around your schedule.",
 				"cta": "Book Trial Now"
 			},
-			"personalized": {
-				"title": "1:1 Personalised lessons to speak like a native",
-				"p1": "From professional communication to casual conversations, master English for every context.",
-				"p2": "Tailor your lessons to your career, interests, and learning goals for a fully customised experience.",
-				"cta": "Book Trial Now"
-			},
 			"australia": {
-				"title": "Australia at your fingertips - boost your confidence",
+				"title": "Australia at your fingertips - <highlight>boost your confidence</highlight>",
 				"p1": "With Tello101's authentic Australian content, master the accent, culture and slang while honing your spoken English skills.",
 				"professionals": "For professionals, connect with young Australians in your field of work.",
 				"students": "For students, gain first-hand insights from Australian university students.",
 				"holiday": "For working holiday makers, unlock tips to maximise your Australian experience.",
+				"cta": "Book Trial Now"
+			},
+			"personalized": {
+				"title": "<highlight>1:1 Personalised lessons</highlight> \nto speak like a native",
+				"p1": "From professional communication to casual conversations, master English for every context.",
+				"p2": "Tailor your lessons to your career, interests, and learning goals for a fully customised experience.",
 				"cta": "Book Trial Now"
 			}
 		},

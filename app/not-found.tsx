@@ -67,7 +67,7 @@ export default function NotFound() {
 		<NextIntlClientProvider locale={locale} messages={messages}>
 			<div className='min-h-screen flex flex-col'>
 				<Header />
-				<main className='flex-1'>
+				<main className='flex-1 pt-20'>
 					<div className='container flex flex-col gap-5 items-center justify-center min-h-[70vh] py-12 text-center'>
 						<div className='max-w-md mx-auto'>
 							<Image src='/images/404.png' alt='404' width={120} height={100} className='h-auto' priority />

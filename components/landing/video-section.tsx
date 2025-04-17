@@ -43,7 +43,7 @@ export const VideoSection = () => {
 				</FadeIn>
 
 				<FadeIn>
-					<div className='brand-video-container max-w-7xl mx-auto'>
+					<div className='box-shadow bg-white rounded-xl overflow-hidden max-w-7xl mx-auto'>
 						<video ref={videoRef} controls playsInline loop muted className='w-full'>
 							<source src='/videos/lesson_video.mp4' type='video/mp4' />
 							Your browser does not support the video tag.

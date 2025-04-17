@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { HeroSection } from '@/components/landing/hero/hero-section';
+import { StatSection } from '@/components/landing/stats/stat-section';
 import { FeaturesSection } from '@/components/landing/features/features-section';
 import { ComparisonSection } from '@/components/landing/comparison/comparison-section';
 import { BenefitsSection } from '@/components/landing/benefits/benefits-section';
@@ -14,6 +15,7 @@ export default function Home() {
 	return (
 		<div className='flex flex-col min-h-screen'>
 			<HeroSection />
+			<StatSection />
 			<FeaturesSection />
 			<ComparisonSection />
 			<BenefitsSection />

@@ -15,7 +15,7 @@ export const TestimonialSection = () => {
 		<section className='brand-section bg-gray-50'>
 			<div className='container'>
 				<FadeIn>
-					<div className='brand-testimonial max-w-3xl mx-auto'>
+					<div className='box-shadow bg-white rounded-xl overflow-hidden mx-auto'>
 						<div className='flex flex-col sm:flex-row bg-white rounded-xl overflow-hidden shadow-lg'>
 							<div className='relative w-full sm:w-1/3 aspect-[3/4]'>
 								<Image
@@ -34,10 +34,10 @@ export const TestimonialSection = () => {
 											d='M13.415.001C6.07 5.185.887 13.681.887 23.041c0 7.632 4.608 12.096 9.936 12.096 5.04 0 8.784-4.032 8.784-8.784 0-4.752-3.312-8.208-7.632-8.208-.864 0-2.016.144-2.304.288.72-4.896 5.328-10.656 9.936-13.536L13.415.001zm24.768 0c-7.2 5.184-12.384 13.68-12.384 23.04 0 7.632 4.608 12.096 9.936 12.096 4.896 0 8.784-4.032 8.784-8.784 0-4.752-3.456-8.208-7.776-8.208-.864 0-1.872.144-2.16.288.72-4.896 5.184-10.656 9.792-13.536L38.183.001z'
 										></path>
 									</svg>
-									<p className='brand-quote mb-6'>{t('quote')}</p>
+									<p className='text-lg md:text-2xl leading-relaxed text-gray-700 mb-6'>{t('quote')}</p>
 									<div>
-										<p className='font-bold'>{t('name')}</p>
-										<p className='text-sm text-gray-600'>{t('title')}</p>
+										<p className='font-bold text-md md:text-lg'>{t('name')}</p>
+										<p className='text-sm text-gray-600 text-md md:text-lg'>{t('title')}</p>
 									</div>
 								</div>
 								<div className='mt-8'>

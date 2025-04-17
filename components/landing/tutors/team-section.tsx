@@ -14,7 +14,7 @@ export const TeamSection = () => {
 	const locale = useLocale();
 
 	return (
-		<section className='brand-section bg-gray-50'>
+		<section className='brand-section brand-gradient-light'>
 			<div className='container'>
 				<FadeIn className='text-center mb-16'>
 					<SectionHeader title={t('title')} />

@@ -13,7 +13,7 @@ export const FeaturesSection = () => {
 	const t = useTranslations('Home.Features');
 
 	return (
-		<section className='brand-section bg-white'>
+		<section className='brand-section bg-gray-50'>
 			<div className='container'>
 				<FadeIn className='text-center mb-16'>
 					<SectionHeader title={t('title')} />
