@@ -17,7 +17,7 @@ export default function Footer() {
 				<div className='grid grid-cols-1 md:grid-cols-4 gap-12'>
 					<div>
 						<Link href={`/${locale}`}>
-							<Image src='/images/tello101_text_logo.png' alt='Tello101' width={120} height={20} className='h-auto' />
+							<Image src='/images/tello101_logo.png' alt='Tello101' width={120} height={20} className='h-auto' />
 						</Link>
 						<p className='mt-4 text-gray-600'>{t('tagline')}</p>
 					</div>

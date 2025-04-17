@@ -10,7 +10,7 @@ export const StatSection = () => {
 	const t = useTranslations('Home.Hero');
 
 	return (
-		<section className='py-16 bg-black'>
+		<section className='py-16 bg-primary'>
 			<div className='container'>
 				<StaggerContainer className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6' delay={0.2}>
 					<StaggerItem>
