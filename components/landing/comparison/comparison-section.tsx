@@ -69,7 +69,7 @@ const ComparisonItem = ({
 			<div className='py-6'>
 				<h4 className={headingClass}>
 					<span className={circleClass}>{isTello ? <Check className='w-4 h-4' /> : <X className='w-4 h-4' />}</span>
-					<span className='leading-tight'>{itemData.title}</span>
+					<span className='leading-tight text-xl md:text-2xl'>{itemData.title}</span>
 				</h4>
 				<p className={descriptionClass}>{itemData.description}</p>
 				{itemData.points && itemData.points.length > 0 && (

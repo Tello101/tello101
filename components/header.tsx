@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -18,6 +18,7 @@ export default function Header() {
 	const pathname = usePathname();
 	const locale = useLocale();
 	const t = useTranslations('Header');
+	const menuRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -32,6 +33,40 @@ export default function Header() {
 	useEffect(() => {
 		setIsMenuOpen(false);
 	}, [pathname]);
+
+	// 메뉴가 열렸을 때 스크롤 방지
+	useEffect(() => {
+		if (isMenuOpen) {
+			// 스크롤 위치 저장
+			const scrollY = window.scrollY;
+			document.body.style.position = 'fixed';
+			document.body.style.top = `-${scrollY}px`;
+			document.body.style.width = '100%';
+		} else {
+			// 스크롤 위치 복원
+			const scrollY = document.body.style.top;
+			document.body.style.position = '';
+			document.body.style.top = '';
+			document.body.style.width = '';
+			if (scrollY) {
+				window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
+			}
+		}
+	}, [isMenuOpen]);
+
+	// 외부 클릭 시 메뉴 닫기
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (isMenuOpen && menuRef.current && !menuRef.current.contains(event.target as Node)) {
+				setIsMenuOpen(false);
+			}
+		};
+
+		document.addEventListener('mousedown', handleClickOutside);
+		return () => {
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
+	}, [isMenuOpen]);
 
 	const isActive = (path: string) => {
 		// 언어 접두사(예: /en, /ko)를 제거한 경로
@@ -115,9 +150,10 @@ export default function Header() {
 						exit={{ opacity: 0, y: -20 }}
 						transition={{ duration: 0.3 }}
 						className='absolute left-0 right-0 top-20 z-40 lg:hidden'
+						ref={menuRef}
 					>
 						<div className='bg-white/98 backdrop-blur shadow-lg border-t border-gray-100 bg-white'>
-							<div className='container py-4 flex flex-col space-y-4 max-h-[80vh] overflow-y-auto'>
+							<div className='container py-4 flex flex-col space-y-4'>
 								<Link
 									href={`/${locale}`}
 									className={`py-3 px-2 border-b border-gray-100 text-lg ${
