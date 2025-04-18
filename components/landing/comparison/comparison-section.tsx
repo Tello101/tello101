@@ -130,9 +130,7 @@ export const ComparisonSection = () => {
 			{/* 공통 타이틀 영역 (흰색 배경, 프라이머리 텍스트) */}
 			<section className='bg-white w-full'>
 				<div className='container max-w-[1200px] mx-auto py-16 flex items-center justify-center'>
-					<FadeIn className='text-center'>
-						<h2 className={`text-4xl md:text-5xl font-bold text-primary`}>{t('title')}</h2>
-					</FadeIn>
+					<h2 className={`text-4xl md:text-5xl font-bold text-primary`}>{t('title')}</h2>
 				</div>
 			</section>
 
