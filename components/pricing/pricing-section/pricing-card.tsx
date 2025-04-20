@@ -31,7 +31,7 @@ export const PricingCard = ({ card, index, minutesType, delay = 0 }: PricingCard
 				className={`overflow-hidden hover:shadow-xl transition-all border-2 ${card.border} rounded-xl h-full flex flex-col`}
 			>
 				<CardHeader className={`p-6 ${card.bg} text-center flex flex-col items-center border-b ${card.border}`}>
-					<div className={`${card.label} bg-opacity-40 rounded-[6px] w-fit mx-auto px-4 py-1`}>
+					<div className={`${card.label} bg-opacity-40 rounded-full w-fit mx-auto px-4 py-1`}>
 						<span className={`text-sm font-bold ${card.text} tracking-wider`}>{`${t(
 							`common.${card.lessonKey}.count`
 						)} ${t(`common.${card.lessonKey}.desc`)}`}</span>

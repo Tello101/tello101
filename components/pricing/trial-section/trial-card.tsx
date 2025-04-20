@@ -31,7 +31,7 @@ export const TrialCard = ({ minutes, originalPrice, discountKey, price, directio
 
 					{/* 수업 횟수 */}
 					<div className='mb-6'>
-						<span className={`inline-block px-4 py-1 text-sm`}>
+						<span className={`inline-block px-4 py-1 text-gray-500 text-sm`}>
 							{`${t('common.lesson1.count')} ${t('common.lesson1.desc')}`}
 						</span>
 					</div>
