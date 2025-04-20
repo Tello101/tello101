@@ -19,7 +19,7 @@ export const FAQItem = ({ question, answers }: FAQItemProps) => {
 				</AccordionTrigger>
 				<AccordionContent className='px-6'>
 					{answers.map((answer, index) => (
-						<p className='text-lg text-gray-500 leading-relaxed mb-0.5' key={index}>
+						<p className='text-lg pl-5 text-gray-500 leading-relaxed mb-0.5' key={index}>
 							{answer}
 						</p>
 					))}
