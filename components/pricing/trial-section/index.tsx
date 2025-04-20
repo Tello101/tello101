@@ -40,7 +40,7 @@ export const TrialSection = () => {
 				</div>
 
 				{/* 체험 수업 가격 */}
-				<div className='bg-primary p-10 rounded-xl w-full'>
+				<div className='bg-primary p-10 rounded-xl w-full max-w-5xl mx-auto'>
 					<div className='max-w-2xl mx-auto '>
 						<div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8'>
 							{/* 25분 체험 수업 */}

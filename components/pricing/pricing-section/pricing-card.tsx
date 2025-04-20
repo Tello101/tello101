@@ -36,7 +36,7 @@ export const PricingCard = ({ card, index, minutesType, delay = 0 }: PricingCard
 							`common.${card.lessonKey}.count`
 						)} ${t(`common.${card.lessonKey}.desc`)}`}</span>
 					</div>
-					<div className='mt-2'>
+					<div className='mt-2 flex items-center justify-center'>
 						<span className={cn(`text-[42px] font-extrabold`, card.price)}>
 							{t(`pricing_info.${minutesType}.${index}.price`)}
 						</span>
