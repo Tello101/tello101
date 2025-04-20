@@ -19,8 +19,28 @@ export const TrialSection = () => {
 					<p className='text-lg text-gray-500 mt-4'>{t('trial_offer.subtitle')}</p>
 				</div>
 
+				<div className='grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16'>
+					{/* 체험 수업 혜택 카드 3개 */}
+					{[0, 1, 2].map((index) => (
+						<FadeIn key={index} delay={index * 0.1} direction='up'>
+							<Card className='hover:shadow-lg transition-all h-full'>
+								<CardContent className='p-8 h-full flex flex-col items-center text-center'>
+									<Image
+										src={`/images/pricing/trial_offer_card_${index + 1}.png`}
+										alt={t(`trial_offer.boxes.${index}.title`)}
+										width={100}
+										height={100}
+									/>
+									<h3 className='text-xl font-bold mb-4 text-primary'>{t(`trial_offer.boxes.${index}.title`)}</h3>
+									<p className='text-gray-500 flex-grow'>{t(`trial_offer.boxes.${index}.desc`)}</p>
+								</CardContent>
+							</Card>
+						</FadeIn>
+					))}
+				</div>
+
 				{/* 체험 수업 가격 */}
-				<div className='border bg-gray-100 p-10 rounded-xl w-full max-w-5xl mx-auto mb-16'>
+				<div className='border bg-gray-100 p-10 rounded-xl w-full max-w-5xl mx-auto'>
 					<div className='max-w-2xl mx-auto '>
 						<div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8'>
 							{/* 25분 체험 수업 */}
@@ -44,26 +64,6 @@ export const TrialSection = () => {
 							/>
 						</div>
 					</div>
-				</div>
-
-				<div className='grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto'>
-					{/* 체험 수업 혜택 카드 3개 */}
-					{[0, 1, 2].map((index) => (
-						<FadeIn key={index} delay={index * 0.1} direction='up'>
-							<Card className='hover:shadow-lg transition-all h-full'>
-								<CardContent className='p-8 h-full flex flex-col items-center text-center'>
-									<Image
-										src={`/images/pricing/trial_offer_card_${index + 1}.png`}
-										alt={t(`trial_offer.boxes.${index}.title`)}
-										width={100}
-										height={100}
-									/>
-									<h3 className='text-xl font-bold mb-4 text-primary'>{t(`trial_offer.boxes.${index}.title`)}</h3>
-									<p className='text-gray-500 flex-grow'>{t(`trial_offer.boxes.${index}.desc`)}</p>
-								</CardContent>
-							</Card>
-						</FadeIn>
-					))}
 				</div>
 			</div>
 		</section>
