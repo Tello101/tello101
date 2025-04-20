@@ -388,6 +388,7 @@
 		"submit": "보내기"
 	},
 	"FAQ": {
+		"title": "자주 묻는 질문",
 		"question_1": {
 			"question": "1. 수업을 취소하려면 어떻게 해야하나요?",
 			"answer": [

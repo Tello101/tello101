@@ -387,6 +387,7 @@
 		"submit": "Send"
 	},
 	"FAQ": {
+		"title": "Frequently Asked Questions",
 		"question_1": {
 			"question": "1. What happens if I cancel a lesson?",
 			"answer": [

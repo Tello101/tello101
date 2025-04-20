@@ -78,7 +78,7 @@ export const ReviewSlider = ({ reviews }: { reviews: Review[] }) => {
 			{/* 첫 번째 줄 */}
 			<div
 				ref={sliderRef1}
-				className='flex gap-4 py-4 mb-4 overflow-x-auto scrollbar-hide'
+				className='flex gap-4 py-4 mb-4 overflow-x-auto scrollbar-hide pl-40'
 				style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
 			>
 				{firstRow.map((review, index) => (

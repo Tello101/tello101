@@ -93,7 +93,7 @@ export const PointsSection = () => {
 	};
 
 	return (
-		<section className='py-16 md:py-24 bg-white'>
+		<section className='py-16 md:py-24 brand-gradient-light'>
 			<div className='container'>
 				<div className='text-center mb-12'>
 					<SectionHeader title={t('points.title')} />

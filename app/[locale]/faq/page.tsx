@@ -1,15 +1,10 @@
-'use client';
-
 import React from 'react';
-import { useTranslations } from 'next-intl';
+import { FAQSection } from '@/components/faq/faq-section';
 
 export default function FaqPage() {
-	const t = useTranslations('Header');
-
 	return (
-		<div className='container py-20'>
-			<h1 className='text-4xl font-bold mb-6'>{t('faq')}</h1>
-			<p className='text-xl'>This page is under construction.</p>
-		</div>
+		<main className='w-full overflow-hidden'>
+			<FAQSection />
+		</main>
 	);
 }
