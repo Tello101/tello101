@@ -12,7 +12,7 @@ export const FAQItem = ({ question, answers }: FAQItemProps) => {
 		<FadeIn direction='up'>
 			<AccordionItem
 				value={question}
-				className='overflow-hidden rounded-[6px] mb-4 data-[state=open]:shadow-md transition-all duration-300 bg-primary-100 sm:hover:bg-primary-50'
+				className='overflow-hidden rounded-[6px] mb-4 data-[state=open]:shadow-md transition-all duration-300 border border-gray-200 bg-gray-50 hover:border hover:border-primary'
 			>
 				<AccordionTrigger className='text-lg md:text-xl font-medium text-left px-6 py-5 hover:no-underline transition-all group'>
 					<h4 className='flex-1 text-xl'>{question}</h4>

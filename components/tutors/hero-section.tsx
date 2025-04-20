@@ -38,7 +38,10 @@ export const HeroSection = () => {
 			<motion.div className='container relative z-10 py-16 md:py-24' style={{ opacity }}>
 				<div className='max-w-4xl mx-auto text-center'>
 					<FadeIn direction='up' delay={0.2} className='mb-10'>
-						<SectionHeader title={t('hero.title')} className='font-bold text-white mb-10 md:whitespace-pre-line' />
+						<SectionHeader
+							title={t('hero.title')}
+							className='font-bold text-white mb-10 md:whitespace-pre-line md:text-6xl text-5xl'
+						/>
 					</FadeIn>
 					<FadeIn direction='up' delay={0.5}>
 						<p className='text-lg md:text-xl text-white/90 max-w-2xl mx-auto drop-shadow-sm'>{t('hero.subtitle')}</p>

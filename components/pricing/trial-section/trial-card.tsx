@@ -39,13 +39,13 @@ export const TrialCard = ({ minutes, originalPrice, discountKey, price, directio
 					{/* 가격 정보 */}
 					<div className='flex items-center justify-center'>
 						<span className='text-gray-400 text-2xl line-through mr-2'>${originalPrice}</span>
-						<span className={`${textColor} text-5xl font-bold`}>{price}</span>
+						<span className={`${textColor} text-[42px] font-bold`}>{price}</span>
 						<span className='text-gray-500 ml-2 text-lg'>USD</span>
 					</div>
 
 					{/* 할인 정보 */}
 				</CardContent>
-				<CardFooter className='bg-rose-500 pt-6 flex justify-center items-center'>
+				<CardFooter className='bg-red-500 pt-6 flex justify-center items-center'>
 					<p className='text-3xl font-bold text-white'>{t(`common.${discountKey}`)}</p>
 				</CardFooter>
 			</Card>
