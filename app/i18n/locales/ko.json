@@ -170,24 +170,25 @@
 	},
 	"Tutors": {
 		"hero": {
-			"title": "호주 명문대 원어민 튜터진과 함께하는 영어 공부",
+			"title": "호주 명문대 원어민 튜터진과 함께하는\n영어 공부",
 			"subtitle": "시드니대, 멜번대, UNSW 등 호주 명문대 출신 튜터들이 1:1 맞춤 수업으로 여러분의 영어 실력을 끌어올려드려요"
 		},
 		"points": {
+			"title": "텔로101만의 특별한 강점",
 			"box1": {
-				"title": "수업 끝나고 바로 받는 꼼꼼한 피드백",
+				"title": "수업 끝나고 바로 받는 <highlight>꼼꼼한 피드백</highlight>",
 				"desc": "어휘, 문법, 발음, 유창성까지 — 수업이 끝나면 한눈에 보기 쉬운 리포트로 복습까지 도와드려요"
 			},
 			"box2": {
-				"title": "명문대 출신, 검증된 실력",
+				"title": "<highlight>명문대 출신, 검증된 실력</highlight>",
 				"desc": "텔로101의 튜터진은 모두 호주 원어민이며, 8:1의 경쟁률을 뚫은 3단계 엄선 절차를 거쳐 선발돼요. 모든 튜터들은 시드니대학교, 멜버른대학교, UNSW 등 호주 명문대 출신이거나 현재 재학 중이에요."
 			},
 			"box3": {
-				"title": "비즈니스, 디자인, 의학? 어떤 분야든 OK!",
-				"desc": "컨설턴트부터 변호사까지! Apple, ANZ, Marriott, Macquarie, Nestlé 등 글로벌 기업 출신 튜터들과 영어 실력과 커리어, 두 마리 토끼를 함께 잡아보세요."
+				"title": "비즈니스, 디자인, 의학? <highlight>어떤 분야든 OK!</highlight>",
+				"desc": "컨설턴트부터 변호사까지!\nApple, ANZ, Marriott, Macquarie, Nestlé 등 글로벌 기업 출신 튜터들과 영어 실력과 커리어, 두 마리 토끼를 함께 잡아보세요."
 			},
 			"box4": {
-				"title": "영어만 쓰는 게 부담스러우신가요? 한국어도 함께 할 수 있는 튜터도 있답니다.",
+				"title": "영어만 쓰는 게 부담스러우신가요? <highlight>한국어도 함께 할 수 있는 튜터</highlight>도 있답니다.",
 				"desc": "처음부터 영어로 말하기 어려워도 괜찮아요. 한국어가 가능한 튜터가 함께 도와드릴게요."
 			}
 		},
@@ -264,81 +265,81 @@
 			}
 		},
 		"reviews": {
-			"title": "이미 300명 넘는 학생들이 만족했어요"
+			"title": "이미 <highlight>300명</highlight> 넘는 학생들이 만족했어요"
 		}
 	},
 	"Pricing": {
 		"common": {
 			"minutes25": "25분 수업",
 			"minutes50": "50분 수업",
-			"lesson1": "1회 수업",
-			"lessons4": "4회 수업",
-			"lessons8": "8회 수업",
-			"lessons20": "20회 수업",
-			"lessons40": "40회 수업",
-			"discount67": "67.5% 할인!"
+			"lesson1": {
+				"count": "1회",
+				"desc": "수업"
+			},
+			"lessons4": {
+				"count": "4회",
+				"desc": "수업"
+			},
+			"lessons8": {
+				"count": "8회",
+				"desc": "수업"
+			},
+			"lessons20": {
+				"count": "20회",
+				"desc": "수업"
+			},
+			"lessons40": {
+				"count": "40회",
+				"desc": "수업"
+			},
+			"discount67": "67.5% 할인!",
+			"discount65": "65% 할인!"
 		},
 		"pricing_info": {
-			"title": "영어 유창성의 길, 여기서 시작하세요",
-			"subtitle": "내 일정과 목표에 딱 맞는 수업 플랜을 선택해 보세요.",
-			"25minutes": [
+			"title": "유창한 영어 실력?\n시작은 텔로101에서!",
+			"subtitle": "내 목표와 일정에 딱 맞는 플랜을 골라보세요.",
+			"minutes25": [
 				{
 					"price": "$160",
-					"per_lesson": "$40 per lesson",
-					"per_lesson_ko": "회당 $40",
-					"valid": "Valid for 30 days",
-					"valid_ko": "유효기간 30일"
+					"per_lesson": "회당 $40",
+					"valid": "유효기간 30일"
 				},
 				{
 					"price": "$296",
-					"per_lesson": "$37 per lesson",
-					"per_lesson_ko": "회당 $37",
-					"valid": "Valid for 60 days",
-					"valid_ko": "유효기간 60일"
+					"per_lesson": "회당 $37",
+					"valid": "유효기간 60일"
 				},
 				{
 					"price": "$680",
-					"per_lesson": "$34 per lesson",
-					"per_lesson_ko": "회당 $34",
-					"valid": "Valid for 120 days",
-					"valid_ko": "유효기간 120일"
+					"per_lesson": "회당 $34",
+					"valid": "유효기간 120일"
 				},
 				{
 					"price": "$1,200",
-					"per_lesson": "$30 per lesson",
-					"per_lesson_ko": "회당 $30",
-					"valid": "Valid for 250 days",
-					"valid_ko": "유효기간 250일"
+					"per_lesson": "회당 $30",
+					"valid": "유효기간 250일"
 				}
 			],
-			"50minutes": [
+			"minutes50": [
 				{
 					"price": "$284",
-					"per_lesson": "$71 per lesson",
-					"per_lesson_ko": "회당 $71",
-					"valid": "Valid for 30 days",
-					"valid_ko": "유효기간 30일"
+					"per_lesson": "회당 $71",
+					"valid": "유효기간 30일"
 				},
 				{
 					"price": "$520",
-					"per_lesson": "$65 per lesson",
-					"per_lesson_ko": "회당 $65",
-					"valid": "Valid for 60 days",
-					"valid_ko": "유효기간 60일"
+					"per_lesson": "회당 $65",
+					"valid": "유효기간 60일"
 				},
 				{
 					"price": "$1,140",
-					"per_lesson": "$57 per lesson",
-					"per_lesson_ko": "회당 $57",
-					"valid": "Valid for 120 days",
-					"valid_ko": "유효기간 120일"
+					"per_lesson": "회당 $57",
+					"valid": "유효기간 120일"
 				},
 				{
 					"price": "$2,120",
-					"per_lesson": "$53 per lesson",
-					"per_lesson_ko": "회당 $53",
-					"valid": "Valid for 250 days",
-					"valid_ko": "유효기간 250일"
+					"per_lesson": "회당 $53",
+					"valid": "유효기간 250일"
 				}
 			]
 		},
@@ -351,16 +352,16 @@
 					"desc": "체험 수업은 정규 수업이랑 똑같이 진행돼요. 튜터의 실제 수업 스타일과 퀄리티를 직접 느껴보실 수 있어요."
 				},
 				{
-					"title": "10일 만료",
+					"title": "30일 만료",
 					"desc": "수업 크레딧은 구매 후 30일 안에 사용해 주세요. 그 이후엔 내 일정에 맞는 다른 수업 패키지로 편하게 이어가시면 돼요."
 				},
 				{
-					"title": "정규 수업과 동일한 수업 경험",
-					"desc": "체험 수업도 정규 수업과 동일한 방식과 기준으로 진행돼요."
+					"title": "유연한 취소 정책",
+					"desc": "수업 시작 24시간 전까지는 무료로 수업을 취소하거나 일정을 변경하실 수 있어요."
 				}
 			],
 			"25_price": "$13",
-			"50_price": "$284"
+			"50_price": "$25"
 		}
 	},
 	"Contact": {

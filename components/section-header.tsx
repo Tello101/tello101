@@ -6,5 +6,5 @@ interface SectionHeaderProps {
 }
 
 export const SectionHeader = ({ title, className }: SectionHeaderProps) => {
-	return <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${className}`}>{title}</h2>;
+	return <h2 className={`text-4xl md:text-5xl font-bold mb-6 text-gray-900 ${className || ''}`}>{title}</h2>;
 };

@@ -6,7 +6,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { FadeIn } from '@/components/animations/fade-in';
 import { StaggerContainer } from '@/components/animations/stagger-container';
 import { BrandButton } from '@/components/ui/brand-button';
-import { SectionHeader } from '@/components/landing/section-header';
+import { SectionHeader } from '@/components/section-header';
 import { TeamMemberCard } from '@/components/landing/tutors/team-member-card';
 
 export const TeamSection = () => {
@@ -25,19 +25,29 @@ export const TeamSection = () => {
 						name='Luca'
 						university='University of Sydney'
 						field='Law'
-						imagePath='/images/tutor_luca.webp'
+						imagePath='/images/tutors/tutor_luca.webp'
 					/>
 
-					<TeamMemberCard name='Joanne' university='UNSW' field='Medicine' imagePath='/images/tutor_joanne.webp' />
+					<TeamMemberCard
+						name='Joanne'
+						university='UNSW'
+						field='Medicine'
+						imagePath='/images/tutors/tutor_joanne.webp'
+					/>
 
 					<TeamMemberCard
 						name='Eric'
 						university='University of Sydney'
 						field='Law'
-						imagePath='/images/tutor_eric.webp'
+						imagePath='/images/tutors/tutor_eric.webp'
 					/>
 
-					<TeamMemberCard name='Nathan' university='ANU' field='Languages' imagePath='/images/tutor_nathan.webp' />
+					<TeamMemberCard
+						name='Nathan'
+						university='ANU'
+						field='Languages'
+						imagePath='/images/tutors/tutor_nathan.webp'
+					/>
 				</StaggerContainer>
 
 				<FadeIn className='text-center mt-12'>

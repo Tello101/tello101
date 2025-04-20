@@ -7,7 +7,7 @@ import { StaggerContainer } from '@/components/animations/stagger-container';
 import { StaggerItem } from '@/components/animations/stagger-item';
 import { FeatureCard } from '@/components/landing/features/feature-card';
 import { ServiceIcon } from '@/components/landing/features/service-icon';
-import { SectionHeader } from '@/components/landing/section-header';
+import { SectionHeader } from '@/components/section-header';
 
 export const FeaturesSection = () => {
 	const t = useTranslations('Home.Features');

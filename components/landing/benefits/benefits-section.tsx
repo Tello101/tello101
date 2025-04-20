@@ -38,11 +38,11 @@ export const BenefitsSection = () => {
 							<ul className='space-y-4 mt-6'>
 								<li className='flex items-start'>
 									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
-									<p className='text-lg text-gray-600'>{t('timezone.p1')}</p>
+									<p className='text-lg text-gray-500'>{t('timezone.p1')}</p>
 								</li>
 								<li className='flex items-start'>
 									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
-									<p className='text-lg text-gray-600'>{t('timezone.p2')}</p>
+									<p className='text-lg text-gray-500'>{t('timezone.p2')}</p>
 								</li>
 							</ul>
 							<BrandButton size='lg' variant='default' className='text-white mt-4' asChild>
@@ -126,15 +126,15 @@ export const BenefitsSection = () => {
 							<ul className='space-y-4 mt-6'>
 								<li className='flex items-start'>
 									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
-									<p className='text-lg text-gray-600'>{t('australia.professionals')}</p>
+									<p className='text-lg text-gray-500'>{t('australia.professionals')}</p>
 								</li>
 								<li className='flex items-start'>
 									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
-									<p className='text-lg text-gray-600'>{t('australia.students')}</p>
+									<p className='text-lg text-gray-500'>{t('australia.students')}</p>
 								</li>
 								<li className='flex items-start'>
 									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
-									<p className='text-lg text-gray-600'>{t('australia.holiday')}</p>
+									<p className='text-lg text-gray-500'>{t('australia.holiday')}</p>
 								</li>
 							</ul>
 							<BrandButton size='lg' variant='default' className='text-white mt-4' asChild>
@@ -175,11 +175,11 @@ export const BenefitsSection = () => {
 							<ul className='space-y-4 mt-6'>
 								<li className='flex items-start'>
 									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
-									<p className='text-lg text-gray-600'>{t('personalized.p1')}</p>
+									<p className='text-lg text-gray-500'>{t('personalized.p1')}</p>
 								</li>
 								<li className='flex items-start'>
 									<BadgeCheck className='h-6 w-6 text-primary mr-3 mt-[2px] flex-shrink-0' />
-									<p className='text-lg text-gray-600'>{t('personalized.p2')}</p>
+									<p className='text-lg text-gray-500'>{t('personalized.p2')}</p>
 								</li>
 							</ul>
 							<BrandButton size='lg' variant='default' className='text-white mt-4' asChild>

@@ -1,15 +1,18 @@
 'use client';
 
 import React from 'react';
-import { useTranslations } from 'next-intl';
+import { ReviewsSection } from '@/components/tutors/reviews/reviews-section';
+import { HeroSection } from '@/components/tutors/hero-section';
+import { PointsSection } from '@/components/tutors/points/points-section';
+import { TutorListSection } from '@/components/tutors/tutor-list/tutor-list-section';
 
 export default function TutorsPage() {
-	const t = useTranslations('Header');
-
 	return (
-		<div className='container py-20'>
-			<h1 className='text-4xl font-bold mb-6'>{t('tutors')}</h1>
-			<p className='text-xl'>This page is under construction.</p>
-		</div>
+		<main className='w-full overflow-hidden'>
+			<HeroSection />
+			<PointsSection />
+			<TutorListSection />
+			<ReviewsSection />
+		</main>
 	);
 }

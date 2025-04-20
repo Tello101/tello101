@@ -169,24 +169,25 @@
 	},
 	"Tutors": {
 		"hero": {
-			"title": "We bring Australia's best tutors to you.",
+			"title": "We bring Australia's best tutors to you",
 			"subtitle": "We are a community of native English speakers from Australia's top universities, committed to helping you achieve your English goals through personalised online lessons."
 		},
 		"points": {
+			"title": "What Makes Us Special",
 			"box1": {
-				"title": "Detailed 1:1 feedback",
+				"title": "Detailed <highlight>1:1 feedback</highlight>",
 				"desc": "Receive all-in-one written reports for each lesson covering vocabulary, grammar, pronunciation, and fluency."
 			},
 			"box2": {
-				"title": "Top Credentials, Proven Results",
+				"title": "<highlight>Top Credentials, Proven Results</highlight>",
 				"desc": "We select our native tutors through a rigorous 3-round screening process with a competitive 8:1 acceptance rate. All our tutors are studying or have graduated from the top Australian universities like Sydney University, University of Melbourne, and UNSW."
 			},
 			"box3": {
-				"title": "Business? Design? Medicine? We've got you covered.",
+				"title": "Business? Design? Medicine? <highlight>We've got you covered.</highlight>",
 				"desc": "From consultants to lawyers, our tutors have experience at leading brands such as Apple, A&O Shearman, Marriott, ANZ, Macquarie Group, and Nestlé."
 			},
 			"box4": {
-				"title": "Scared to speak only English? We have bilingual tutors.",
+				"title": "Scared to speak only English?\nWe have <highlight>Korean-speaking tutors.</highlight>",
 				"desc": "Choose a bilingual tutor to help you feel more comfortable with conversation."
 			}
 		},
@@ -263,81 +264,81 @@
 			}
 		},
 		"reviews": {
-			"title": "Over 300+ satisfied students"
+			"title": "Over <highlight>300+</highlight> satisfied students"
 		}
 	},
 	"Pricing": {
 		"common": {
 			"minutes25": "25 minutes",
 			"minutes50": "50 minutes",
-			"lesson1": "1 lesson",
-			"lessons4": "4 lessons",
-			"lessons8": "8 lessons",
-			"lessons20": "20 lessons",
-			"lessons40": "40 lessons",
-			"discount67": "67.5% off!"
+			"lesson1": {
+				"count": "1",
+				"desc": "lesson"
+			},
+			"lessons4": {
+				"count": "4",
+				"desc": "lessons"
+			},
+			"lessons8": {
+				"count": "8",
+				"desc": "lessons"
+			},
+			"lessons20": {
+				"count": "20",
+				"desc": "lessons"
+			},
+			"lessons40": {
+				"count": "40",
+				"desc": "lessons"
+			},
+			"discount67": "67.5% off!",
+			"discount65": "65% off!"
 		},
 		"pricing_info": {
 			"title": "Your Path to English Fluency Starts Here",
 			"subtitle": "Find the perfect plan to fit your learning goals and schedule.",
-			"25minutes": [
+			"minutes25": [
 				{
 					"price": "$160",
 					"per_lesson": "$40 per lesson",
-					"per_lesson_ko": "회당 $40",
-					"valid": "Valid for 30 days",
-					"valid_ko": "유효기간 30일"
+					"valid": "Valid for 30 days"
 				},
 				{
 					"price": "$296",
 					"per_lesson": "$37 per lesson",
-					"per_lesson_ko": "회당 $37",
-					"valid": "Valid for 60 days",
-					"valid_ko": "유효기간 60일"
+					"valid": "Valid for 60 days"
 				},
 				{
 					"price": "$680",
 					"per_lesson": "$34 per lesson",
-					"per_lesson_ko": "회당 $34",
-					"valid": "Valid for 120 days",
-					"valid_ko": "유효기간 120일"
+					"valid": "Valid for 120 days"
 				},
 				{
 					"price": "$1,200",
 					"per_lesson": "$30 per lesson",
-					"per_lesson_ko": "회당 $30",
-					"valid": "Valid for 250 days",
-					"valid_ko": "유효기간 250일"
+					"valid": "Valid for 250 days"
 				}
 			],
-			"50minutes": [
+			"minutes50": [
 				{
 					"price": "$284",
 					"per_lesson": "$71 per lesson",
-					"per_lesson_ko": "회당 $71",
-					"valid": "Valid for 30 days",
-					"valid_ko": "유효기간 30일"
+					"valid": "Valid for 30 days"
 				},
 				{
 					"price": "$520",
 					"per_lesson": "$65 per lesson",
-					"per_lesson_ko": "회당 $65",
-					"valid": "Valid for 60 days",
-					"valid_ko": "유효기간 60일"
+					"valid": "Valid for 60 days"
 				},
 				{
 					"price": "$1,140",
 					"per_lesson": "$57 per lesson",
-					"per_lesson_ko": "회당 $57",
-					"valid": "Valid for 120 days",
-					"valid_ko": "유효기간 120일"
+					"valid": "Valid for 120 days"
 				},
 				{
 					"price": "$2,120",
 					"per_lesson": "$53 per lesson",
-					"per_lesson_ko": "회당 $53",
-					"valid": "Valid for 250 days",
-					"valid_ko": "유효기간 250일"
+					"valid": "Valid for 250 days"
 				}
 			]
 		},
@@ -350,16 +351,16 @@
 					"desc": "Our trial lessons are conducted in the same way as a regular lesson, ensuring you can experience the full quality of our tutors."
 				},
 				{
-					"title": "10-day expiry",
+					"title": "30-day expiry",
 					"desc": "Use your lesson credits within 30 days. After this, continue learning with one of our other packages."
 				},
 				{
-					"title": "Same experience as regular lessons",
-					"desc": "Trial lessons follow the same structure and standards as our paid sessions."
+					"title": "Flexible cancellation",
+					"desc": "Cancel or reschedule your lesson up to 24 hours before the lesson for free."
 				}
 			],
 			"25_price": "$13",
-			"50_price": "$284"
+			"50_price": "$25"
 		}
 	},
 	"Contact": {

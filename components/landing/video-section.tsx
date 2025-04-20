@@ -3,7 +3,7 @@
 import React, { useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { FadeIn } from '@/components/animations/fade-in';
-import { SectionHeader } from '@/components/landing/section-header';
+import { SectionHeader } from '@/components/section-header';
 
 export const VideoSection = () => {
 	const videoRef = useRef<HTMLVideoElement>(null);

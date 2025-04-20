@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { FadeIn } from '@/components/animations/fade-in';
 import { motion } from 'framer-motion';
 import { Check, X } from 'lucide-react';
-import { SectionHeader } from '@/components/landing/section-header';
+import { SectionHeader } from '@/components/section-header';
 import Image from 'next/image';
 
 // 비교 포인트 아이템 컴포넌트
