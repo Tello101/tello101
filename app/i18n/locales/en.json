@@ -365,27 +365,47 @@
 	},
 	"Contact": {
 		"name": "Name",
+		"name_placeholder": "Enter your name",
 		"email": "Email",
-		"kakao_id": "KakaoTalk ID",
+		"message": "Message",
+		"kakao_id": "Kakao ID",
+		"kakao_id_placeholder": "Enter your Kakao ID",
 		"preferred_tutor": "Preferred Tutor",
+		"preferred_tutor_placeholder": "Select your preferred tutor",
 		"level": "English Level",
 		"level_options": {
-			"beginner": "Complete Beginner",
-			"lower_intermediate": "Can speak simple sentences",
-			"upper_intermediate": "Can handle everyday conversations",
-			"advanced": "Near-native level"
+			"beginner": "Beginner",
+			"lower_intermediate": "Lower intermediate",
+			"upper_intermediate": "Upper intermediate",
+			"advanced": "Advanced"
 		},
-		"goals": "Lesson Goals",
+		"goals": "Learning Goals",
 		"goals_options": {
-			"native": "I want to speak like a native",
-			"business": "I want to learn business English",
-			"conversation": "I want to have natural everyday conversations",
-			"other": "I have other goals"
+			"native": "Speak like a native",
+			"business": "Business english",
+			"conversation": "Everyday conversation",
+			"other": "Other"
 		},
-		"availability": "Available Time Slots",
-		"kakao_contact": "Contact us on KakaoTalk",
-		"submit": "Send"
+		"availability": "Availability",
+		"kakao_contact": "Contact via Kakao",
+		"submit": "Submit",
+		"submitting": "Submitting...",
+		"submit_success": "Your inquiry has been successfully submitted.",
+		"submit_error": "An error occurred while submitting your inquiry. Please try again.",
+		"select_available_times": "Please select all time slots that work for you. You can select multiple options.",
+		"day_monday": "Mon",
+		"day_tuesday": "Tue",
+		"day_wednesday": "Wed",
+		"day_thursday": "Thu",
+		"day_friday": "Fri",
+		"day_saturday": "Sat",
+		"day_sunday": "Sun",
+		"time_morning": "Morning",
+		"time_afternoon": "Afternoon",
+		"time_early_evening": "Early Evening",
+		"time_evening": "Evening"
 	},
+
 	"FAQ": {
 		"title": "Frequently Asked Questions",
 		"question_1": {

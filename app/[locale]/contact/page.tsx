@@ -1,15 +1,12 @@
 'use client';
 
 import React from 'react';
-import { useTranslations } from 'next-intl';
+import { ContactSection } from '@/components/contact/contact-section';
 
 export default function ContactPage() {
-	const t = useTranslations('Header');
-
 	return (
-		<div className='container py-20'>
-			<h1 className='text-4xl font-bold mb-6'>{t('contact')}</h1>
-			<p className='text-xl'>This page is under construction.</p>
-		</div>
+		<main className='w-full overflow-hidden'>
+			<ContactSection />
+		</main>
 	);
 }

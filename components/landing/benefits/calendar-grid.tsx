@@ -1,7 +1,6 @@
 import React from 'react';
 import { CalendarDay } from './calendar-day';
 
-// 날짜 데이터 타입 정의
 export type CalendarDayType = {
 	day: number;
 	isCurrentMonth: boolean;

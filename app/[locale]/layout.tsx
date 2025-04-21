@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { locales } from '@/app/i18n';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import { Toaster } from 'sonner';
 
 type Props = {
 	children: ReactNode;
@@ -60,6 +61,7 @@ export default async function LocaleLayout(props: Props) {
 			<Header />
 			<main className='flex-1 pt-20'>{props.children}</main>
 			<Footer />
+			<Toaster position='bottom-right' />
 		</NextIntlClientProvider>
 	);
 }

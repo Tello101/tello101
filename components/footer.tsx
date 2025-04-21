@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import { MailIcon, MapPinIcon } from 'lucide-react';
+import { ADDRESS, EMAIL } from '@/lib/constants/brand';
 
 export default function Footer() {
 	const t = useTranslations('Footer');
@@ -54,11 +55,11 @@ export default function Footer() {
 						<ul className='mt-4 space-y-3'>
 							<li className='text-gray-600 hover:text-primary transition-colors flex gap-1 items-center  '>
 								<MailIcon className='w-4 h-4 ' />
-								<Link href='mailto:tello101.official@gmail.com'>tello101.official@gmail.com</Link>
+								<Link href={`mailto:${EMAIL}`}>{EMAIL}</Link>
 							</li>
 							<li className='text-gray-600 flex gap-1 items-center'>
 								<MapPinIcon className='w-4 h-4' />
-								<p>Sydney, Australia</p>
+								<p>{ADDRESS}</p>
 							</li>
 						</ul>
 					</div>

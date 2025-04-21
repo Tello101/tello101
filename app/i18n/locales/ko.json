@@ -366,9 +366,13 @@
 	},
 	"Contact": {
 		"name": "이름",
+		"name_placeholder": "이름을 입력해주세요",
 		"email": "이메일",
-		"kakao_id": "카카오톡 ID",
+		"message": "메시지",
+		"kakao_id": "카카오 ID",
+		"kakao_id_placeholder": "카카오톡 ID를 입력해주세요",
 		"preferred_tutor": "선호하는 튜터",
+		"preferred_tutor_placeholder": "선호하는 튜터를 선택해주세요",
 		"level": "영어 레벨",
 		"level_options": {
 			"beginner": "완전 초보예요",
@@ -385,7 +389,22 @@
 		},
 		"availability": "수업 가능 시간대",
 		"kakao_contact": "카카오톡 문의",
-		"submit": "보내기"
+		"submit": "보내기",
+		"submitting": "전송 중...",
+		"submit_success": "문의가 성공적으로 접수되었습니다.",
+		"submit_error": "문의 접수 중 오류가 발생했습니다. 다시 시도해주세요.",
+		"select_available_times": "원하시는 시간대를 모두 선택해주세요. 다중 선택 가능합니다.",
+		"day_monday": "월",
+		"day_tuesday": "화",
+		"day_wednesday": "수",
+		"day_thursday": "목",
+		"day_friday": "금",
+		"day_saturday": "토",
+		"day_sunday": "일",
+		"time_morning": "오전",
+		"time_afternoon": "오후",
+		"time_early_evening": "저녁",
+		"time_evening": "밤"
 	},
 	"FAQ": {
 		"title": "자주 묻는 질문",
