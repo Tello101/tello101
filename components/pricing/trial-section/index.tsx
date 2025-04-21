@@ -41,7 +41,7 @@ export const TrialSection = () => {
 
 				{/* 체험 수업 가격 */}
 				<div className='border bg-gray-100 p-10 rounded-xl w-full max-w-5xl mx-auto'>
-					<div className='max-w-2xl mx-auto '>
+					<div className='max-w-lg mx-auto '>
 						<div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8'>
 							{/* 25분 체험 수업 */}
 							<TrialCard

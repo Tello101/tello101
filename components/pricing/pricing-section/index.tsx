@@ -17,28 +17,28 @@ export const PricingSection = () => {
 	// 카드 공통 스타일 정의
 	const cardStyles = [
 		{
-			bg: 'bg-amber-50',
+			bg: 'bg-gradient-to-br from-amber-50 to-amber-100',
 			border: 'border-amber-200',
 			text: 'text-amber-700',
 			price: 'text-amber-800',
 			label: 'bg-amber-500',
 		},
 		{
-			bg: 'bg-emerald-50',
+			bg: 'bg-gradient-to-br from-emerald-50 to-emerald-100',
 			border: 'border-emerald-200',
 			text: 'text-emerald-700',
 			price: 'text-emerald-800',
 			label: 'bg-emerald-500',
 		},
 		{
-			bg: 'bg-indigo-50',
+			bg: 'bg-gradient-to-br from-indigo-50 to-indigo-100',
 			border: 'border-indigo-200',
 			text: 'text-indigo-700',
 			price: 'text-indigo-800',
 			label: 'bg-indigo-500',
 		},
 		{
-			bg: 'bg-slate-100',
+			bg: 'bg-gradient-to-br from-slate-50 to-slate-100',
 			border: 'border-slate-200',
 			text: 'text-slate-700',
 			price: 'text-slate-800',
