@@ -148,7 +148,8 @@
 	"Services": {
 		"hero": {
 			"create_journey": "Create your own English journey, anytime, anywhere",
-			"english_made_easy": "English made easy with Tello101"
+			"english_made_easy": "English made easy with Tello101",
+			"get_started": "Get Started"
 		},
 		"steps": {
 			"title": "How our platform works",
@@ -161,11 +162,42 @@
 			"step4_title": "Step 4: Select your lesson content",
 			"step4_desc": "Choose your lesson focus - Australian topics, open discussions or interest-based content, designed by TESOL-certified academics.",
 			"step5_title": "Step 5: Learn!",
-			"step5_desc": "Set your lesson preferences and enter the lesson space. Receive immediate feedback and corrections from your tutor.",
+			"step5_desc1": "Set your lesson preferences and enter the lesson space.",
+			"step5_desc2": "Receive immediate feedback and corrections from your tutor.",
 			"step6_title": "Step 6: Review feedback",
 			"step6_desc": "Review personalised lesson notes and feedback from your tutor."
 		},
-		"enquire_now_cta": "ENQUIRE NOW"
+		"lesson_content": {
+			"australian_topics": "Australian Topics",
+			"australian_topics_desc": "Learn about Australian culture, slang, and lifestyle",
+			"business_english": "Business English",
+			"business_english_desc": "Learn professional business English for meetings, emails, and presentations",
+			"interview_prep": "Interview Preparation",
+			"interview_prep_desc": "Customized interview preparation for job opportunities in Australia",
+			"academic_english": "Academic English",
+			"academic_english_desc": "Improve your academic English skills for university classes, essays, and presentations",
+			"daily_conversation": "Daily Conversation",
+			"daily_conversation_desc": "Practice real-life expressions and natural daily conversations used in Australia",
+			"work_holiday": "Working Holiday Guide",
+			"work_holiday_desc": "Learn practical English and local information for Australian working holiday preparation"
+		},
+		"tutor_info": {
+			"name": "Kelly",
+			"university": "University of Sydney",
+			"major": "Marketing and Accounting"
+		},
+		"review_note": {
+			"title": "Review Note",
+			"date": "Date",
+			"tutor": "Tutor",
+			"todays_focus": "Today's Focus",
+			"say_it_better": "Say it Better"
+		},
+		"cta": {
+			"title": "Ready to start your English learning journey?",
+			"enquire_now": "Enquire Now"
+		},
+		"common": { "tutor": "Tutor", "selected": "Selected", "select": "Select" }
 	},
 	"Tutors": {
 		"hero": {
@@ -405,7 +437,6 @@
 		"time_early_evening": "Early Evening",
 		"time_evening": "Evening"
 	},
-
 	"FAQ": {
 		"title": "Frequently Asked Questions",
 		"question_1": {

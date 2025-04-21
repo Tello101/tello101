@@ -6,9 +6,9 @@ import { TrialSection } from '@/components/pricing/trial-section';
 
 export default function PricingPage() {
 	return (
-		<main className='overflow-hidden'>
+		<div className='overflow-hidden'>
 			<PricingSection />
 			<TrialSection />
-		</main>
+		</div>
 	);
 }

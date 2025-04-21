@@ -17,7 +17,7 @@ export const CtaSection = () => {
 		>
 			<FadeIn className='container text-center'>
 				<h2 className='text-4xl md:text-6xl font-bold mb-14'>{t('title')}</h2>
-				<BrandButton size='lg' variant='white' asChild className='mt-2 text-xl sm:px-12 sm:py-8 sm:text-[20px]'>
+				<BrandButton size='lg' variant='white' asChild className='mt-2 text-xl md:text-2xl sm:px-9 sm:py-7'>
 					<Link href={`/${locale}/contact`} className='flex items-center'>
 						{t('cta')}
 					</Link>

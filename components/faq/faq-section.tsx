@@ -31,8 +31,11 @@ export const FAQSection = () => {
 	return (
 		<section className='py-12 md:py-20'>
 			<div className='container mx-auto px-4'>
-				<div className='flex items-center justify-center mb-14'>
-					<SectionHeader title={t('title')} className='mb-0 text-center' />
+				<div className='flex items-center justify-center mb-8 md:mb-14'>
+					<SectionHeader
+						title={t('title')}
+						className='font-bold text-black text-4xl md:text-6xl whitespace-pre-line mb-0 text-center'
+					/>
 				</div>
 
 				<div className='relative'>

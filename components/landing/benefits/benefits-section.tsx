@@ -7,7 +7,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { BrandButton } from '@/components/ui/brand-button';
 import { Button } from '@/components/ui/button';
 import { FadeIn } from '@/components/animations/fade-in';
-import { BadgeCheck } from 'lucide-react';
+import { BadgeCheck, ChevronLeft, ChevronRight } from 'lucide-react';
 import { PersonalizedLessonUI } from '@/components/landing/benefits/personalized-lesson';
 import { TimeSlot } from '@/components/landing/benefits/time-slot';
 import { CalendarGrid } from '@/components/landing/benefits/calendar-grid';
@@ -59,37 +59,11 @@ export const BenefitsSection = () => {
 										<div className='flex space-x-2'>
 											<Button variant='outline' size='icon' className='h-8 w-8 rounded-full'>
 												<span className='sr-only'>Previous month</span>
-												<svg
-													xmlns='http://www.w3.org/2000/svg'
-													width='24'
-													height='24'
-													viewBox='0 0 24 24'
-													fill='none'
-													stroke='currentColor'
-													strokeWidth='2'
-													strokeLinecap='round'
-													strokeLinejoin='round'
-													className='h-4 w-4'
-												>
-													<path d='m15 18-6-6 6-6' />
-												</svg>
+												<ChevronLeft className='h-4 w-4' />
 											</Button>
 											<Button variant='outline' size='icon' className='h-8 w-8 rounded-full'>
 												<span className='sr-only'>Next month</span>
-												<svg
-													xmlns='http://www.w3.org/2000/svg'
-													width='24'
-													height='24'
-													viewBox='0 0 24 24'
-													fill='none'
-													stroke='currentColor'
-													strokeWidth='2'
-													strokeLinecap='round'
-													strokeLinejoin='round'
-													className='h-4 w-4'
-												>
-													<path d='m9 18 6-6-6-6' />
-												</svg>
+												<ChevronRight className='h-4 w-4' />
 											</Button>
 										</div>
 									</div>

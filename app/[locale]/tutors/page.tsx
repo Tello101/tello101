@@ -8,11 +8,11 @@ import { TutorListSection } from '@/components/tutors/tutor-list/tutor-list-sect
 
 export default function TutorsPage() {
 	return (
-		<main className='w-full overflow-hidden'>
+		<div className='w-full overflow-hidden'>
 			<HeroSection />
 			<PointsSection />
 			<TutorListSection />
 			<ReviewsSection />
-		</main>
+		</div>
 	);
 }

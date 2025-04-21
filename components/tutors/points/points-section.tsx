@@ -115,7 +115,7 @@ export const PointsSection = () => {
 						setApi={setApi}
 						className='w-full px-0 md:px-14'
 					>
-						<CarouselContent className='-ml-2 md:-ml-4'>
+						<CarouselContent className='-ml-2 md:-ml-4 select-none'>
 							{cardData.map((card, index) => (
 								<CarouselItem
 									key={index}

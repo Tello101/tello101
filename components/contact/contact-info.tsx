@@ -14,7 +14,7 @@ export const ContactInfo = () => {
 
 	return (
 		<div className='bg-primary text-white p-8 lg:p-10 rounded-t-lg md:rounded-t-none md:rounded-l-lg flex flex-col h-full'>
-			<h2 className='text-3xl font-bold mb-12'>Contact Us</h2>
+			<h2 className='text-3xl md:text-4xl font-bold mb-12'>Contact Us</h2>
 
 			<div className='space-y-8 flex-grow'>
 				<div className='flex items-center'>

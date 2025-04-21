@@ -40,7 +40,7 @@ export const HeroSection = () => {
 					<FadeIn direction='up' delay={0.2} className='mb-10'>
 						<SectionHeader
 							title={t('hero.title')}
-							className='font-bold text-white mb-10 md:whitespace-pre-line md:text-6xl text-5xl'
+							className='font-bold text-white mb-10 md:whitespace-pre-line text-4xl md:text-6xl'
 						/>
 					</FadeIn>
 					<FadeIn direction='up' delay={0.5}>

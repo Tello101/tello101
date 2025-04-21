@@ -148,8 +148,9 @@
 	},
 	"Services": {
 		"hero": {
-			"create_journey": "시간과 장소 상관없이 편하게 시작하는 영어 공부",
-			"english_made_easy": "텔로101과 함께라면 영어가 쉬워져요"
+			"create_journey": "시간과 장소 상관없이 편하게 시작하는\n영어 공부",
+			"english_made_easy": "텔로101과 함께라면 영어가 쉬워져요",
+			"get_started": "시작하기"
 		},
 		"steps": {
 			"title": "텔로101은 이렇게 이용할 수 있어요",
@@ -162,11 +163,41 @@
 			"step4_title": "4단계: 배우고 싶은 주제 고르기",
 			"step4_desc": "TESOL 자격증을 가진 튜터가 준비한 호주 유학, 인터뷰 준비, 프리토킹 등 관심 있는 주제를 고르면 맞춤 수업을 시작할 수 있어요.",
 			"step5_title": "5단계: 이제 수업을 즐겨볼 차례에요!",
-			"step5_desc": "수업 전에 원하는 스타일을 정하고, 바로 튜터와 수업을 시작해 보세요. 튜터가 수업 중 실시간으로 코멘트와 피드백까지 꼼꼼히 챙겨줘요.",
+			"step5_desc1": "수업 전에 원하는 스타일을 정하고, 바로 튜터와 수업을 시작해 보세요. 튜터가 수업 중 실시간으로 코멘트와 피드백까지 꼼꼼히 챙겨줘요.",
 			"step6_title": "STEP 6: 수업 피드백 확인하기",
 			"step6_desc": "수업 후엔 내가 놓친 부분과 복습 포인트까지 정리된 피드백 노트를 받아볼 수 있어요."
 		},
-		"enquire_now_cta": "상담 신청하기"
+		"lesson_content": {
+			"australian_topics": "호주 관련 주제",
+			"australian_topics_desc": "호주 문화, 슬랭, 라이프스타일에 대해 배워보세요",
+			"business_english": "비즈니스 영어",
+			"business_english_desc": "회의, 이메일, 프레젠테이션에 필요한 전문 비즈니스 영어를 배워보세요",
+			"interview_prep": "영어 인터뷰 준비",
+			"interview_prep_desc": "호주 취업 면접에 자신감을 갖출 수 있는 맞춤형 인터뷰 준비 수업",
+			"academic_english": "학술 영어",
+			"academic_english_desc": "대학 수업, 에세이, 학술 발표를 위한 아카데믹 영어 능력을 향상시켜요",
+			"daily_conversation": "일상 회화",
+			"daily_conversation_desc": "호주에서 실제로 쓰이는 표현과 자연스러운 일상 대화를 연습해보세요",
+			"work_holiday": "워킹홀리데이 가이드",
+			"work_holiday_desc": "호주 워킹홀리데이 준비를 위한 실용적인 영어와 현지 정보를 배워보세요"
+		},
+		"tutor_info": {
+			"name": "Kelly",
+			"university": "시드니대학교",
+			"major": "마케팅 및 회계"
+		},
+		"review_note": {
+			"title": "수업 노트",
+			"date": "날짜",
+			"tutor": "튜터",
+			"todays_focus": "오늘의 주제",
+			"say_it_better": "이렇게 말하면 더 좋아요"
+		},
+		"cta": {
+			"title": "텔로101과 함께 시작할 준비가 되셨나요?",
+			"enquire_now": "상담 신청하기"
+		},
+		"common": { "tutor": "튜터", "selected": "선택됨", "select": "선택하기" }
 	},
 	"Tutors": {
 		"hero": {

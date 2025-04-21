@@ -1,16 +1,15 @@
-'use client';
-
 import React, { useRef } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 import { BrandButton } from '@/components/ui/brand-button';
 import { FadeIn } from '@/components/animations/fade-in';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
+import { SectionHeader } from '@/components/section-header';
 
 export const HeroSection = () => {
+	const t = useTranslations('Services.hero');
 	const heroRef = useRef(null);
-	const t = useTranslations('Home.Hero');
 
 	const { scrollYProgress } = useScroll({
 		target: heroRef,
@@ -23,20 +22,21 @@ export const HeroSection = () => {
 
 	return (
 		<section
-			className='relative py-16 md:py-52 text-white bg-gradient-to-r from-primary/90 to-secondary/90 overflow-hidden'
+			className='relative py-16 md:py-36 text-white bg-gradient-to-b from-orange-100/70 to-orange-300/80 overflow-hidden'
 			ref={heroRef}
 		>
 			<div className='absolute inset-0 z-0 opacity-70'>
-				<Image src='/images/landing_hero.JPG' alt='Background' fill className='object-cover' priority />
+				<Image src='/images/services/services_hero.png' alt='Background' fill className='object-cover' priority />
 			</div>
+
 			<motion.div className='container relative z-10' style={{ opacity: heroOpacity, scale: heroScale, y: heroY }}>
-				<FadeIn direction='left' className='mb-20'>
-					<h1 className='text-4xl sm:text-6xl md:text-7xl font-bold mb-6 whitespace-pre-line'>{t('title')}</h1>
-					<p className='text-xl md:text-2xl'>{t('subtitle')}</p>
+				<FadeIn direction='left' className='mb-12 max-w-4xl'>
+					<SectionHeader title={t('create_journey')} className='text-white mb-5 whitespace-pre-line' />
+					<p className='text-lg md:text-2xl'>{t('english_made_easy')}</p>
 				</FadeIn>
 				<FadeIn direction='left'>
-					<BrandButton size='lg' variant='white' className='text-lg sm:px-12 sm:py-8 sm:text-[22px]' asChild>
-						<Link href='/contact'>{t('cta')}</Link>
+					<BrandButton size='lg' variant='white' className='text-lg sm:px-10 sm:py-6' asChild>
+						<Link href='/contact'>{t('get_started')}</Link>
 					</BrandButton>
 				</FadeIn>
 			</motion.div>

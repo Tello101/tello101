@@ -11,10 +11,8 @@ export const PricingSection = () => {
 	const t = useTranslations('Pricing');
 	const [selectedTab, setSelectedTab] = useState('minutes25');
 
-	// 레슨 데이터 정의
 	const lessonTypes = ['lessons4', 'lessons8', 'lessons20', 'lessons40'];
 
-	// 카드 공통 스타일 정의
 	const cardStyles = [
 		{
 			bg: 'bg-gradient-to-br from-amber-50 to-amber-100',
@@ -63,7 +61,10 @@ export const PricingSection = () => {
 			<div className='container'>
 				<div className='text-center mb-16 max-w-3xl mx-auto'>
 					<FadeIn direction='up'>
-						<SectionHeader title={t('pricing_info.title')} className='font-bold text-white mb-10 whitespace-pre-line' />
+						<SectionHeader
+							title={t('pricing_info.title')}
+							className='font-bold text-white mb-10 md:text-6xl whitespace-pre-line'
+						/>
 						<p className='text-lg text-white mt-4'>{t('pricing_info.subtitle')}</p>
 					</FadeIn>
 				</div>
