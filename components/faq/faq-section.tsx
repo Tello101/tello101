@@ -38,8 +38,8 @@ export const FAQSection = () => {
 				<div className='relative'>
 					{/* 데코레이션 원 요소들 - 더 또렷하고 다양하게 */}
 					<div className='absolute -top-14 -right-5 w-32 h-32 bg-secondary/30 rounded-full blur-xl -z-10'></div>
-					<div className='absolute top-20 -right-20 w-48 h-48 bg-primary/20 rounded-full blur-xl -z-10'></div>
-					<div className='absolute -bottom-20 -left-10 w-56 h-56 bg-primary/25 rounded-full blur-xl -z-10'></div>
+					<div className='absolute top-20 -right-20 w-48 h-48 bg-red-400/20 rounded-full blur-xl -z-10'></div>
+					<div className='absolute -bottom-20 -left-10 w-56 h-56 bg-red-400/25 rounded-full blur-xl -z-10'></div>
 					<div className='absolute top-1/3 -left-24 w-40 h-40 bg-secondary/20 rounded-full blur-xl -z-10'></div>
 					<div className='absolute bottom-1/4 right-5 w-24 h-24 bg-blue-300/20 rounded-full blur-lg -z-10'></div>
 					<div className='absolute top-10 left-10 w-16 h-16 bg-blue-400/15 rounded-full blur-md -z-10'></div>
