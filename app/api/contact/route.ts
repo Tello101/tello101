@@ -17,8 +17,7 @@ export async function POST(req: Request) {
 		// 이메일 내용 구성
 		const mailOptions = {
 			from: `"Tello101 Contact" <${process.env.EMAIL_USER}>`,
-			to: 'suminkim.me@gmail.com',
-			// to: process.env.EMAIL_USER,
+			to: process.env.EMAIL_USER,
 			subject: 'A new inquiry has been received on the Tello101 website.',
 			html: `
         <h2>Contact Information</h2>
