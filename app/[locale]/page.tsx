@@ -10,6 +10,26 @@ import { TeamSection } from '@/components/landing/tutors/team-section';
 import { VideoSection } from '@/components/landing/video-section';
 import { TestimonialSection } from '@/components/landing/testimonial-section';
 import { CtaSection } from '@/components/landing/cta-section';
+import { getTranslations } from 'next-intl/server';
+
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const locale = params.locale;
+
+  try {
+    const t = await getTranslations({ locale, namespace: 'Common.metadata.default' });
+
+    return {
+      title: t('title'),
+      description: t('description'),
+    };
+  } catch (error) {
+    return {
+      title: '호주 영어 1:1 튜터 플랫폼 | 텔로101',
+      description:
+        '호주 영어 발음부터 회화까지! 호주 영어 전문 튜터와 1:1 과외, 지금 텔로101에서 쉽고 재미있게 시작해보세요.',
+    };
+  }
+}
 
 export default function Home() {
   return (

@@ -4,8 +4,30 @@
       "title": "Language"
     },
     "metadata": {
-      "title": "Australian English 1:1 Tutoring Platform | Tello101",
-      "description": "From Australian pronunciation to real conversations! Learn with expert Australian English tutors through 1:1 lessons—fun and easy learning with Tello101."
+      "default": {
+        "title": "Australian English 1:1 Tutoring Platform | Tello101",
+        "description": "From Australian pronunciation to real conversations! Learn with expert Australian English tutors through 1:1 lessons—fun and easy learning with Tello101."
+      },
+      "services": {
+        "title": "Start the 1:1 Australian English Tutoring | Tello101",
+        "description": "Learn Australian English with no worries about time or place! From choosing your tutor to booking lessons and getting feedback — it’s all easy and flexible with Tello101."
+      },
+      "tutors": {
+        "title": "1:1 English Tutoring with Australia’s Top Uni Grads | Tello101",
+        "description": "Personalized lessons with native tutors from Australia’s top universities — plus instant feedback after class. Build your English skills and your career with Tello101."
+      },
+      "pricing": {
+        "title": "1:1 Australian English Lessons from Just ₩10,000 | Tello101",
+        "description": "Learn 1:1 with native tutors from top Australian universities — starting from just ₩10,000 per lesson! Try a trial class today and book sessions anytime that fits your schedule."
+      },
+      "faq": {
+        "title": "Frequently Asked Questions – English Tutoring FAQ | Tello101",
+        "description": "From booking and cancellations to payments and tutor selection — find clear answers to the most common questions about using Tello101, all in one place."
+      },
+      "contact": {
+        "title": "Book the Australian English Trial Lesson | Tello101",
+        "description": "Find the perfect tutor for your English level and goals — starting today! Just enter a few quick details and get matched with a tutor for your personalized trial lesson."
+      }
     }
   },
   "Header": {
