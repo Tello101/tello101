@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { FAQSection } from '@/components/faq/faq-section';
 import { getTranslations } from 'next-intl/server';

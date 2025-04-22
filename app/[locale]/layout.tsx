@@ -1,3 +1,5 @@
+'use client';
+
 import { ReactNode } from 'react';
 import { getTranslations } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
