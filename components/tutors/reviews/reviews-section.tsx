@@ -4,25 +4,28 @@ import React from 'react';
 import { ReviewSlider } from '@/components/tutors/reviews/reviews-slider';
 import { reviews } from '@/lib/constants/reviews';
 import { useTranslations } from 'next-intl';
+import { SectionHeading } from '@/components/section-header';
 
 export const ReviewsSection = () => {
-	const t = useTranslations('Tutors');
+  const t = useTranslations('Tutors');
 
-	const renderHighlight = (chunks: React.ReactNode) => (
-		<span className='bg-primary inline-block text-transparent bg-clip-text font-bold'>{chunks}</span>
-	);
+  const renderHighlight = (chunks: React.ReactNode) => (
+    <span className="inline-block bg-primary bg-clip-text font-bold text-transparent">
+      {chunks}
+    </span>
+  );
 
-	return (
-		<section className='py-16 md:py-20 brand-gradient-light border-t border-gray-100'>
-			<div className='relative'>
-				<h2 className='text-center font-bold text-black text-4xl md:text-5xl mb-16'>
-					{t.rich('reviews.title', {
-						highlight: renderHighlight,
-					})}
-				</h2>
-
-				<ReviewSlider reviews={reviews} />
-			</div>
-		</section>
-	);
+  return (
+    <section className="brand-gradient-light border-t border-gray-100 py-16 md:py-20">
+      <div className="relative">
+        <SectionHeading
+          title={t.rich('reviews.title', {
+            highlight: renderHighlight,
+          })}
+          className="mb-[50px] text-center"
+        />
+        <ReviewSlider reviews={reviews} />
+      </div>
+    </section>
+  );
 };

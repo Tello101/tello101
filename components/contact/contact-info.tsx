@@ -6,46 +6,46 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
 export const ContactInfo = () => {
-	const t = useTranslations('Contact');
+  const t = useTranslations('Contact');
 
-	const handleKakaoContact = () => {
-		window.open(KAKAO_CHANNEL_URL, '_blank');
-	};
+  const handleKakaoContact = () => {
+    window.open(KAKAO_CHANNEL_URL, '_blank');
+  };
 
-	return (
-		<div className='bg-primary text-white p-8 lg:p-10 rounded-t-lg md:rounded-t-none md:rounded-l-lg flex flex-col h-full'>
-			<h2 className='text-3xl md:text-4xl font-bold mb-12'>Contact Us</h2>
+  return (
+    <div className="flex h-full flex-col rounded-t-lg bg-primary p-8 text-white md:rounded-l-lg md:rounded-t-none lg:p-10">
+      <h2 className="mb-12 text-3xl font-bold md:text-4xl">Contact Us</h2>
 
-			<div className='space-y-8 flex-grow'>
-				<div className='flex items-center'>
-					<div className='bg-white/10 p-3 rounded-full mr-4 flex-shrink-0'>
-						<MessageSquare className='w-6 h-6 text-white' />
-					</div>
-					<Button
-						className='bg-yellow-400 hover:bg-yellow-300 rounded-[6px] text-black flex items-center gap-2'
-						onClick={handleKakaoContact}
-					>
-						<Image src='/images/kakao-talk.svg' alt='Kakao-talk' width={20} height={20} />
-						{t('kakao_contact')}
-					</Button>
-				</div>
+      <div className="flex-grow space-y-8">
+        <div className="flex items-center">
+          <div className="mr-4 flex-shrink-0 rounded-full bg-white/10 p-3">
+            <MessageSquare className="h-5 w-5 text-white md:h-6 md:w-6" />
+          </div>
+          <Button
+            className="flex items-center gap-2 rounded-full bg-yellow-400 text-black hover:bg-yellow-300"
+            onClick={handleKakaoContact}
+          >
+            <Image src="/images/kakao-talk.svg" alt="Kakao-talk" width={20} height={20} />
+            {t('kakao_contact')}
+          </Button>
+        </div>
 
-				<div className='flex items-center'>
-					<div className='bg-white/10 p-3 rounded-full mr-4 flex-shrink-0'>
-						<Mail className='w-6 h-6 text-white' />
-					</div>
-					<a href={`mailto:${EMAIL}`} className='text-white hover:underline'>
-						{EMAIL}
-					</a>
-				</div>
+        <div className="flex items-center">
+          <div className="mr-4 flex-shrink-0 rounded-full bg-white/10 p-3">
+            <Mail className="h-5 w-5 text-white md:h-6 md:w-6" />
+          </div>
+          <a href={`mailto:${EMAIL}`} className="text-white hover:underline">
+            {EMAIL}
+          </a>
+        </div>
 
-				<div className='flex items-center'>
-					<div className='bg-white/10 p-3 rounded-full mr-4 flex-shrink-0'>
-						<MapPin className='w-6 h-6 text-white' />
-					</div>
-					<p className='text-white'>{ADDRESS}</p>
-				</div>
-			</div>
-		</div>
-	);
+        <div className="flex items-center">
+          <div className="mr-4 flex-shrink-0 rounded-full bg-white/10 p-3">
+            <MapPin className="h-5 w-5 text-white md:h-6 md:w-6" />
+          </div>
+          <p className="text-white">{ADDRESS}</p>
+        </div>
+      </div>
+    </div>
+  );
 };

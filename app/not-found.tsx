@@ -72,7 +72,7 @@ export default function NotFound() {
 						<div className='max-w-md mx-auto'>
 							<Image src='/images/404.png' alt='404' width={120} height={100} className='h-auto' priority />
 						</div>
-						<h1 className='text-3xl font-bold mb-5 text-primary'>Page Not Found</h1>
+						<h2 className='text-3xl font-bold mb-5 text-primary'>Page Not Found</h2>
 						<BrandButton variant='default' asChild>
 							<Link href={`/${locale}`}>Back to Home</Link>
 						</BrandButton>
