@@ -104,12 +104,10 @@
 
 .brand-card {
   @apply overflow-hidden rounded-xl border border-gray-100 bg-white;
-  box-shadow: 0 10px 30px rgba(41, 128, 255, 0.08);
   transition: all 0.3s ease;
 }
 
 .brand-card:hover {
-  box-shadow: 0 15px 40px rgba(41, 128, 255, 0.12);
   transform: translateY(-4px);
 }
 
