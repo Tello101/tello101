@@ -4,23 +4,23 @@ import React from 'react';
 import Image from 'next/image';
 
 export interface ServiceIconProps {
-	type: 'conversation' | 'education' | 'business';
-	className?: string;
+  type: 'conversation' | 'education' | 'business';
+  className?: string;
 }
 
-export function ServiceIcon({ type, className = 'w-auto h-28' }: ServiceIconProps) {
-	const getSvgPath = () => {
-		switch (type) {
-			case 'conversation':
-				return '/svgs/conversation.svg';
-			case 'education':
-				return '/svgs/resume.svg';
-			case 'business':
-				return '/svgs/business.svg';
-			default:
-				return '/svgs/conversation.svg';
-		}
-	};
+export function ServiceIcon({ type, className = 'w-auto h-32' }: ServiceIconProps) {
+  const getPath = () => {
+    switch (type) {
+      case 'conversation':
+        return '/images/conversation.png';
+      case 'education':
+        return '/images/resume.png';
+      case 'business':
+        return '/images/business.png';
+      default:
+        return '/images/conversation.png';
+    }
+  };
 
-	return <Image src={getSvgPath()} alt={`${type} icon`} width={40} height={60} className={className} />;
+  return <Image src={getPath()} alt={`${type}`} width={40} height={60} className={className} />;
 }

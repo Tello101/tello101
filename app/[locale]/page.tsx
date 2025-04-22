@@ -12,17 +12,17 @@ import { TestimonialSection } from '@/components/landing/testimonial-section';
 import { CtaSection } from '@/components/landing/cta-section';
 
 export default function Home() {
-	return (
-		<div className='flex flex-col'>
-			<HeroSection />
-			<StatSection />
-			<FeaturesSection />
-			<ComparisonSection />
-			<BenefitsSection />
-			<TeamSection />
-			<VideoSection />
-			<TestimonialSection />
-			<CtaSection />
-		</div>
-	);
+  return (
+    <div className="flex flex-col">
+      <HeroSection />
+      <StatSection />
+      <FeaturesSection />
+      <ComparisonSection />
+      <BenefitsSection />
+      <TeamSection />
+      <VideoSection />
+      <TestimonialSection />
+      <CtaSection />
+    </div>
+  );
 }
