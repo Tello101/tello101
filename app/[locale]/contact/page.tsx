@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { ContactSection } from '@/components/contact/contact-section';
 import { getTranslations } from 'next-intl/server';

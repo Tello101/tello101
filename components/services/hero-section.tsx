@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';

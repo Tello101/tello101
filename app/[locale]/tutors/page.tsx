@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { ReviewsSection } from '@/components/tutors/reviews/reviews-section';
 import { HeroSection } from '@/components/tutors/hero-section';

@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { HeroSection } from '@/components/services/hero-section';
 import { ServicesSteps } from '@/components/services/services-steps';
