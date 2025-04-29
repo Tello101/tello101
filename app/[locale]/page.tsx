@@ -10,7 +10,8 @@ import { TestimonialSection } from '@/components/landing/testimonial-section';
 import { CtaSection } from '@/components/landing/cta-section';
 import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata({ params }: { params: { locale: string } }) {
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }) {
+  const params = await props.params;
   const locale = params.locale;
 
   try {
