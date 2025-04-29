@@ -57,7 +57,7 @@ export const HeroSection = () => {
           <BrandButton
             size="lg"
             variant="white"
-            className="text-lg font-bold md:py-7 md:text-xl"
+            className="text-lg font-bold md:px-10 md:py-8 md:text-xl"
             asChild
           >
             <Link href="/contact">{t('get_started')}</Link>
