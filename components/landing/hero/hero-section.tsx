@@ -47,7 +47,7 @@ export const HeroSection = () => {
             title={t('title')}
             className="mb-6 whitespace-pre-line text-white"
           />
-          <SubTitle title={t('subtitle')} size="lg" className="text-gray-50" />
+          <SubTitle title={t('subtitle')} size="lg" className="text-gray-50 md:text-3xl" />
         </FadeIn>
         <FadeIn direction="left">
           <BrandButton

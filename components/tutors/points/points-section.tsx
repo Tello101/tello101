@@ -18,6 +18,8 @@ export const PointsSection = () => {
   const t = useTranslations('Tutors');
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0); // 튜터 캐러셀과 동일하게 count 상태 추가
+  const [autoplay, setAutoplay] = useState(true);
 
   // 하이라이트 렌더 함수
   const renderHighlight = (chunks: React.ReactNode) => (
@@ -54,62 +56,68 @@ export const PointsSection = () => {
     },
   ];
 
-  const handleSelect = useCallback(() => {
-    if (!api) return;
-    setCurrent(api.selectedScrollSnap());
-  }, [api]);
+  // 자동 재생 기능 구현
+  useEffect(() => {
+    if (!api || !autoplay) return;
 
-  const handleScroll = useCallback(() => {
-    if (!api) return;
-    setCurrent(api.selectedScrollSnap());
-  }, [api]);
+    const autoplayInterval = setInterval(() => {
+      api.scrollNext();
+    }, 3000);
 
+    return () => {
+      clearInterval(autoplayInterval);
+    };
+  }, [api, autoplay]);
+
+  // 튜터 캐러셀과 동일한 구조로 변경
   useEffect(() => {
     if (!api) return;
 
-    api.on('select', handleSelect);
-    api.on('scroll', handleScroll);
-    api.on('reInit', handleSelect);
+    setCount(api.scrollSnapList().length);
 
-    setCurrent(api.selectedScrollSnap());
+    const onSelect = () => {
+      setCurrent(api.selectedScrollSnap());
+    };
+
+    api.on('select', onSelect);
+    api.on('reInit', onSelect);
 
     return () => {
-      api.off('select', handleSelect);
-      api.off('scroll', handleScroll);
-      api.off('reInit', handleSelect);
+      api.off('select', onSelect);
+      api.off('reInit', onSelect);
     };
-  }, [api, handleSelect, handleScroll]);
+  }, [api]);
 
-  const getSlideStyle = (index: number) => {
-    const isCurrent = index === current;
+  const goToSlide = useCallback(
+    (index: number) => {
+      api?.scrollTo(index);
+    },
+    [api],
+  );
 
-    return {
-      opacity: isCurrent ? 1 : 0.4,
-      filter: isCurrent ? 'none' : 'blur(1px)',
-      transform: `scale(${isCurrent ? 1 : 0.85})`,
-      transition: 'all 0.5s cubic-bezier(0.25, 1, 0.5, 1)',
-      pointerEvents: isCurrent ? 'auto' : 'none',
-    } as React.CSSProperties;
-  };
+  const handleMouseEnter = () => setAutoplay(false);
+  const handleMouseLeave = () => setAutoplay(true);
 
   return (
-    <section className="brand-gradient-light py-16 md:py-24">
+    <section className="bg-blue-50 py-16 md:py-24">
       <div className="container">
         <div className="mb-12 text-center">
           <SectionHeading title={t('points.title')} />
         </div>
 
-        <div className="relative mx-auto" style={{ maxWidth: '1000px' }}>
+        <div
+          className="relative mx-auto"
+          style={{ maxWidth: '1000px' }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <Carousel
             opts={{
               align: 'center',
-              loop: false,
+              loop: true,
               skipSnaps: false,
               containScroll: 'trimSnaps',
-              duration: 35,
-              // 항상 현재 슬라이드가 중앙에 위치하도록 설정
               dragFree: false,
-              // 첫 번째와 마지막 슬라이드도 중앙에 위치하도록 여백 설정
               inViewThreshold: 0,
             }}
             setApi={setApi}
@@ -119,8 +127,7 @@ export const PointsSection = () => {
               {cardData.map((card, index) => (
                 <CarouselItem
                   key={index}
-                  className="flex justify-center pl-2 transition-all duration-500 md:basis-4/5 md:pl-4 lg:basis-2/3"
-                  style={getSlideStyle(index)}
+                  className="flex justify-center pl-2 md:basis-4/5 md:pl-4 lg:basis-2/3"
                 >
                   <div className="w-full px-1 py-4 md:px-4">
                     <PointCard
@@ -146,12 +153,12 @@ export const PointsSection = () => {
             </div>
           </Carousel>
 
-          {/* 인디케이터 */}
+          {/* 인디케이터 - 튜터 캐러셀과 동일한 방식으로 변경 */}
           <div className="mt-8 flex justify-center space-x-3">
-            {cardData.map((_, index) => (
+            {Array.from({ length: count }).map((_, index) => (
               <button
                 key={index}
-                onClick={() => api?.scrollTo(index, true)}
+                onClick={() => goToSlide(index)}
                 className={`h-4 w-4 rounded-full transition-all ${
                   index === current ? 'scale-125 bg-primary' : 'bg-gray-300 hover:bg-gray-400'
                 }`}

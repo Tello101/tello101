@@ -1,12 +1,14 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface SectionHeadingProps {
   title: string | React.ReactNode;
   size?: 'sm' | 'md' | 'lg' | 'xl';
   className?: string;
+  image?: string;
 }
 
-export const SectionHeading = ({ title, size = 'md', className }: SectionHeadingProps) => {
+export const SectionHeading = ({ title, size = 'md', className, image }: SectionHeadingProps) => {
   const headingClass = {
     h2: {
       sm: 'text-3xl md:text-4xl',

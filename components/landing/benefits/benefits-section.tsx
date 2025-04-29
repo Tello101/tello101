@@ -30,7 +30,7 @@ export const BenefitsSection = () => {
           {/* Card 1 - Time Zone */}
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <FadeIn direction="left" className="space-y-6">
-              <h3 className="text-3xl font-bold text-black md:text-4xl">
+              <h3 className="text-3xl font-bold text-black md:text-5xl">
                 {t.rich('timezone.title', {
                   highlight: renderHighlight,
                 })}
@@ -84,13 +84,25 @@ export const BenefitsSection = () => {
 
           {/* Card 2 - Personalized */}
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-            <FadeIn direction="right" className="order-2 lg:order-1">
-              <h3 className="mb-4 text-3xl font-bold text-black md:text-4xl">
+            <FadeIn direction="right" delay={0.2} className="order-2 space-y-6 lg:order-1">
+              <div className="brand-card overflow-hidden p-0">
+                <div className="relative h-[350px] md:h-[500px]">
+                  <Image
+                    src="/images/landing_confidence.webp"
+                    alt="Australia at your fingertips"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </FadeIn>
+            <FadeIn direction="left" className="order-1 space-y-6 lg:order-2">
+              <h3 className="mb-4 text-3xl font-bold text-black md:text-5xl">
                 {t.rich('australia.title', {
                   highlight: renderHighlight,
                 })}
               </h3>
-              <p className="text-lg leading-relaxed text-black text-opacity-50">
+              <p className="text-lg leading-relaxed text-black text-opacity-50 md:text-xl">
                 {t('australia.p1')}
               </p>
               <ul className="mt-8 space-y-4">
@@ -104,31 +116,12 @@ export const BenefitsSection = () => {
                 </Link>
               </BrandButton>
             </FadeIn>
-            <FadeIn direction="left" delay={0.2} className="order-1 space-y-6 lg:order-2">
-              <div className="brand-card overflow-hidden p-0">
-                <div className="relative h-[350px]">
-                  <Image
-                    src="/images/landing_confidence.webp"
-                    alt="Australia at your fingertips"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </FadeIn>
           </div>
 
           {/* Card 3 - Australia */}
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-            <FadeIn direction="left" className="space-y-6">
-              <div className="brand-card overflow-hidden p-0">
-                <div className="rounded-xl bg-gray-50 p-6 shadow-md">
-                  <PersonalizedLessonUI />
-                </div>
-              </div>
-            </FadeIn>
-            <FadeIn direction="right" delay={0.2}>
-              <h3 className="text-3xl font-bold text-black md:text-4xl">
+            <FadeIn direction="left" delay={0.2}>
+              <h3 className="text-3xl font-bold text-black md:text-5xl">
                 {t.rich('personalized.title', {
                   highlight: renderHighlight,
                 })}
@@ -143,6 +136,13 @@ export const BenefitsSection = () => {
                 </Link>
               </BrandButton>
             </FadeIn>
+            <FadeIn direction="right" className="space-y-6">
+              <div className="brand-card overflow-hidden p-0">
+                <div className="rounded-xl bg-gray-50 p-6 shadow-md">
+                  <PersonalizedLessonUI />
+                </div>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </div>
@@ -154,7 +154,7 @@ const BadgeListItem = ({ children }: { children: React.ReactNode }) => {
   return (
     <li className="flex items-start">
       <BadgeCheck className="mr-3 mt-[2px] h-6 w-6 flex-shrink-0 text-primary" />
-      <p className="text-lg text-black text-opacity-70">{children}</p>
+      <p className="text-lg text-black text-opacity-70 md:text-xl">{children}</p>
     </li>
   );
 };

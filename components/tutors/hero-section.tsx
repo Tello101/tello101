@@ -20,15 +20,21 @@ export const HeroSection = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section className="relative overflow-hidden bg-primary" ref={heroRef}>
+    <section
+      className="relative overflow-hidden bg-gradient-to-r from-amber-900/50 to-amber-900/50"
+      ref={heroRef}
+    >
       {/* 배경 이미지 - 페럴렉스 효과 */}
-      <motion.div className="absolute inset-0 h-full w-full opacity-25" style={{ y: bgY }}>
+      <motion.div
+        className="absolute inset-0 h-full w-full opacity-20 md:opacity-50"
+        style={{ y: bgY }}
+      >
         <Image
-          src="/images/tutors/tutors_hero.png"
+          src="/images/tutors/hero.png"
           alt="Tello101 Tutors"
           fill
-          style={{ objectFit: 'contain', objectPosition: 'center' }}
           priority
+          className="object-cover"
         />
       </motion.div>
 
@@ -36,17 +42,20 @@ export const HeroSection = () => {
       <div className="absolute inset-0 bg-primary/10"></div>
 
       {/* 컨텐츠 */}
-      <motion.div className="container relative z-10 py-16 md:py-24" style={{ opacity }}>
+      <motion.div
+        className="container relative z-10 py-16 md:pb-[370px] md:pt-20"
+        style={{ opacity }}
+      >
         <div className="mx-auto max-w-4xl text-center">
           <FadeIn direction="up" delay={0.2} className="mb-10">
             <SectionHeading
               title={t('hero.title')}
               className="text-white md:whitespace-pre-line"
-              size="lg"
+              size="xl"
             />
           </FadeIn>
           <FadeIn direction="up" delay={0.5}>
-            <SubTitle title={t('hero.subtitle')} className="text-gray-50" />
+            <SubTitle title={t('hero.subtitle')} className="text-gray-50" size="lg" />
           </FadeIn>
         </div>
       </motion.div>

@@ -221,7 +221,7 @@
       "subtitle": "We are a community of native English speakers from Australia's top universities, committed to helping you achieve your English goals through personalised online lessons."
     },
     "points": {
-      "title": "What Makes Us Special",
+      "title": "What Makes Us Special?",
       "box1": {
         "title": "Detailed <highlight>1:1 feedback</highlight>",
         "desc": "Receive all-in-one written reports for each lesson covering vocabulary, grammar, pronunciation, and fluency."
@@ -240,7 +240,7 @@
       }
     },
     "find_tutors": {
-      "title": "Find the perfect tutor for you now",
+      "title": "Find the <highlight>perfect tutor</highlight> for you now",
       "tutors_list": {
         "interests": "Interests:",
         "current": "Current:",

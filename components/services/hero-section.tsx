@@ -24,7 +24,7 @@ export const HeroSection = () => {
 
   return (
     <section
-      className="relative overflow-hidden bg-gradient-to-b from-zinc-900/50 to-zinc-500/90 py-16 text-white md:py-36"
+      className="relative overflow-hidden bg-gradient-to-r from-zinc-900/90 to-gray-200/90 py-16 text-white md:py-36"
       ref={heroRef}
     >
       <div className="absolute inset-0 z-0 opacity-70">
@@ -47,7 +47,11 @@ export const HeroSection = () => {
             className="whitespace-pre-line text-white"
             size="lg"
           />
-          <SubTitle title={t('english_made_easy')} className="text-gray-50" size="lg" />
+          <SubTitle
+            title={t('english_made_easy')}
+            className="text-gray-50 md:text-[27px]"
+            size="lg"
+          />
         </FadeIn>
         <FadeIn direction="left">
           <BrandButton

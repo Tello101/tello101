@@ -15,8 +15,21 @@ export const TutorCarousel = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
+  const [autoplay, setAutoplay] = useState(true);
 
   const tutors = t.raw('find_tutors.tutors_list.tutors') as Tutor[];
+
+  useEffect(() => {
+    if (!api || !autoplay) return;
+
+    const autoplayInterval = setInterval(() => {
+      api.scrollNext();
+    }, 2000);
+
+    return () => {
+      clearInterval(autoplayInterval);
+    };
+  }, [api, autoplay]);
 
   useEffect(() => {
     if (!api) return;
@@ -43,6 +56,9 @@ export const TutorCarousel = () => {
     [api],
   );
 
+  const handleMouseEnter = () => setAutoplay(false);
+  const handleMouseLeave = () => setAutoplay(true);
+
   return (
     <div className="mx-auto w-full max-w-5xl">
       <Carousel
@@ -55,6 +71,8 @@ export const TutorCarousel = () => {
           inViewThreshold: 0,
         }}
         setApi={setApi}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <CarouselContent className="ml-0 select-none py-10">
           {tutors.map((tutor: Tutor, index: number) => (

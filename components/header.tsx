@@ -119,9 +119,9 @@ export default function Header() {
               <Image
                 src="/images/tello101_logo.png"
                 alt="Tello101 logo"
-                width={100}
-                height={20}
-                className="h-auto"
+                width={120}
+                height={30}
+                className="h-auto w-[100px] md:w-[120px]"
               />
             </Link>
           </h1>

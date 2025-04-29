@@ -28,7 +28,7 @@ export const LessonContentSelector = () => {
   ];
 
   return (
-    <div className="mx-auto w-full max-w-5xl">
+    <div className="mx-auto mt-7 w-full max-w-5xl">
       <div className="grid grid-cols-1 gap-6 rounded-lg border border-gray-100 bg-gray-100 p-4 sm:grid-cols-2 md:p-8 lg:grid-cols-3">
         {contents.map((content) => (
           <Card

@@ -217,7 +217,7 @@
   },
   "Tutors": {
     "hero": {
-      "title": "호주 명문대 원어민 튜터진과 함께하는\n영어 공부",
+      "title": "호주 명문대 원어민 튜터진과 함께하는 영어 공부",
       "subtitle": "시드니대, 멜번대, UNSW 등 호주 명문대 출신 튜터들이 1:1 맞춤 수업으로 여러분의 영어 실력을 끌어올려드려요"
     },
     "points": {
@@ -240,7 +240,7 @@
       }
     },
     "find_tutors": {
-      "title": "지금 나에게 딱 맞는 튜터를 찾아보세요",
+      "title": "지금 나에게 <highlight>딱 맞는 튜터</highlight>를 찾아보세요",
       "tutors_list": {
         "interests": "관심사:",
         "current": "현재:",

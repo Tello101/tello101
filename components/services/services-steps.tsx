@@ -71,7 +71,7 @@ const AnimatedStep = ({ step, children }: { step: number; children: React.ReactN
       variants={variants}
       initial="hidden"
       animate={controls}
-      className="mb-16 overflow-hidden md:mb-24"
+      className="mb-16 flex flex-col items-center justify-center overflow-hidden md:mb-24"
     >
       {children}
     </motion.div>
@@ -130,9 +130,9 @@ export const ServicesSteps = () => {
 
 const StepHeader = ({ title, desc }: { title: string; desc: string }) => {
   return (
-    <div className="mb-10 text-center md:text-left">
-      <h3 className="mb-3 text-3xl font-bold text-primary md:text-4xl">{title}</h3>
-      <p className="text-lg text-gray-500">{desc}</p>
+    <div className="mb-10 md:text-left">
+      <h3 className="mb-3 text-center text-3xl font-bold text-primary md:text-4xl">{title}</h3>
+      <p className="text-center text-lg text-gray-500 md:text-xl">{desc}</p>
     </div>
   );
 };

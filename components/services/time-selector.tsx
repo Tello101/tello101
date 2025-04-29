@@ -32,7 +32,7 @@ export const TimeSelector = () => {
   const selectedTimeSlot = '19:00';
 
   return (
-    <div className="mx-auto w-full max-w-4xl overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+    <div className="mx-auto mt-7 w-full max-w-4xl overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
       <div className="grid gap-6 p-6 md:grid-cols-2">
         <div className="flex flex-col space-y-4">
           {/* 튜터 정보 */}
