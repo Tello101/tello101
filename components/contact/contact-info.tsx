@@ -1,9 +1,8 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
-import { Mail, MapPin, MessageSquare } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { EMAIL, ADDRESS, KAKAO_CHANNEL_URL, INSTAGRAM_CHANNEL_URL } from '@/lib/constants/brand';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
 
 export const ContactInfo = () => {
   const t = useTranslations('Contact');
