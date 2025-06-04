@@ -339,7 +339,7 @@
         "count": "40",
         "desc": "lessons"
       },
-      "discount67": "67.5% off!",
+      "discount68": "68% off!",
       "discount65": "65% off!"
     },
     "pricing_info": {
@@ -347,45 +347,45 @@
       "subtitle": "Find the perfect plan to fit your learning goals and schedule.",
       "minutes25": [
         {
-          "price": "$160",
-          "per_lesson": "$40 per lesson",
+          "price": "140,000",
+          "per_lesson": "35,000₩ per lesson",
           "valid": "Valid for 30 days"
         },
         {
-          "price": "$296",
-          "per_lesson": "$37 per lesson",
+          "price": "264,000",
+          "per_lesson": "33,000₩ per lesson",
           "valid": "Valid for 60 days"
         },
         {
-          "price": "$680",
-          "per_lesson": "$34 per lesson",
+          "price": "600,000",
+          "per_lesson": "30,000₩ per lesson",
           "valid": "Valid for 120 days"
         },
         {
-          "price": "$1,200",
-          "per_lesson": "$30 per lesson",
+          "price": "1,080,000",
+          "per_lesson": "27,000₩ per lesson",
           "valid": "Valid for 250 days"
         }
       ],
       "minutes50": [
         {
-          "price": "$284",
-          "per_lesson": "$71 per lesson",
+          "price": "252,000",
+          "per_lesson": "63,000₩ per lesson",
           "valid": "Valid for 30 days"
         },
         {
-          "price": "$520",
-          "per_lesson": "$65 per lesson",
+          "price": "464,000",
+          "per_lesson": "58,000₩ per lesson",
           "valid": "Valid for 60 days"
         },
         {
-          "price": "$1,140",
-          "per_lesson": "$57 per lesson",
+          "price": "1,020,000",
+          "per_lesson": "51,000₩ per lesson",
           "valid": "Valid for 120 days"
         },
         {
-          "price": "$2,120",
-          "per_lesson": "$53 per lesson",
+          "price": "1,884,960",
+          "per_lesson": "47,000₩ per lesson",
           "valid": "Valid for 250 days"
         }
       ]
@@ -407,8 +407,8 @@
           "desc": "Cancel or reschedule your lesson up to 24 hours before the lesson for free."
         }
       ],
-      "25_price": "$13",
-      "50_price": "$25"
+      "25_price": "11,000",
+      "50_price": "22,000"
     }
   },
   "Contact": {
@@ -421,6 +421,7 @@
     "preferred_tutor": "Preferred Tutor",
     "preferred_tutor_placeholder": "Select your preferred tutor",
     "level": "English Level",
+    "level_placeholder": "Select your English level",
     "level_options": {
       "beginner": "Beginner",
       "lower_intermediate": "Lower intermediate",
@@ -428,6 +429,7 @@
       "advanced": "Advanced"
     },
     "goals": "Learning Goals",
+    "goals_placeholder": "Select your learning goals",
     "goals_options": {
       "native": "Speak like a native",
       "business": "Business english",

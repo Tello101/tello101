@@ -53,8 +53,8 @@ export const TrialSection = () => {
             {/* 25분 체험 수업 */}
             <TrialCard
               minutes="minutes25"
-              originalPrice="40"
-              discountKey="discount67"
+              originalPrice="35,000₩"
+              discountKey="discount68"
               price={t('trial_offer.25_price')}
               direction="right"
               delay={0.1}
@@ -63,7 +63,7 @@ export const TrialSection = () => {
             {/* 50분 체험 수업 */}
             <TrialCard
               minutes="minutes50"
-              originalPrice="71"
+              originalPrice="63,000₩"
               discountKey="discount65"
               price={t('trial_offer.50_price')}
               direction="left"

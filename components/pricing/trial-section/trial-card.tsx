@@ -8,7 +8,7 @@ import { FadeIn } from '@/components/animations/fade-in';
 interface TrialCardProps {
   minutes: 'minutes25' | 'minutes50';
   originalPrice: string;
-  discountKey: 'discount67' | 'discount65';
+  discountKey: 'discount68' | 'discount65';
   price: string;
   direction: 'left' | 'right';
   delay?: number;
@@ -39,7 +39,7 @@ export const TrialCard = ({
           <div className="my-3 flex items-center justify-center">
             <div className="relative mr-2">
               <span className="absolute -top-5 right-0 text-lg font-light text-gray-400 line-through">
-                ${originalPrice}
+                {originalPrice}
               </span>
               <span
                 className={`${minutes === 'minutes25' ? 'text-blue-500' : 'text-purple-500'} text-[42px] font-bold`}
@@ -47,7 +47,7 @@ export const TrialCard = ({
                 {price}
               </span>
             </div>
-            <span className="mb-3 self-end text-base text-gray-500">AUD</span>
+            <span className="mb-3 self-end text-base text-gray-500">₩</span>
           </div>
 
           {/* 수업 설명 */}

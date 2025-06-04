@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import { Mail, MapPin, MessageSquare } from 'lucide-react';
-import { EMAIL, ADDRESS, KAKAO_CHANNEL_URL } from '@/lib/constants/brand';
+import { EMAIL, ADDRESS, KAKAO_CHANNEL_URL, INSTAGRAM_CHANNEL_URL } from '@/lib/constants/brand';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
@@ -12,40 +12,74 @@ export const ContactInfo = () => {
     window.open(KAKAO_CHANNEL_URL, '_blank');
   };
 
-  return (
-    <div className="flex h-full flex-col rounded-t-lg bg-primary p-8 text-white md:rounded-l-lg md:rounded-t-none lg:p-10">
-      <h2 className="mb-12 text-3xl font-bold md:text-4xl">Contact Us</h2>
+  const handleInstagramContact = () => {
+    window.open(INSTAGRAM_CHANNEL_URL, '_blank');
+  };
 
-      <div className="flex-grow space-y-8">
-        <div className="flex items-center">
-          <div className="mr-4 flex-shrink-0 rounded-full bg-white/10 p-3">
-            <MessageSquare className="h-5 w-5 text-white md:h-6 md:w-6" />
+  return (
+    <section className="flex h-full flex-col rounded-t-lg bg-primary p-8 text-white md:rounded-l-lg md:rounded-t-none lg:p-10">
+      <h2 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl">Contact Us</h2>
+
+      <div className="space-y-4 md:space-y-8">
+        {/* 카카오톡 */}
+        <div className="group transition-all duration-300">
+          <div className="mb-1 flex items-center md:mb-3">
+            <div className="mr-3 rounded-lg bg-white/10 p-2">
+              <Image src="/images/kakao-talk.svg" alt="Kakao-talk" width={20} height={20} />
+            </div>
+            <h3 className="text-xl font-semibold">Kakao</h3>
           </div>
-          <Button
-            className="flex items-center gap-2 rounded-full bg-yellow-400 text-black hover:bg-yellow-300"
+          <button
             onClick={handleKakaoContact}
+            className="ml-12 text-lg text-white/80 transition-colors hover:text-yellow-300"
           >
-            <Image src="/images/kakao-talk.svg" alt="Kakao-talk" width={20} height={20} />
             {t('kakao_contact')}
-          </Button>
+          </button>
         </div>
 
-        <div className="flex items-center">
-          <div className="mr-4 flex-shrink-0 rounded-full bg-white/10 p-3">
-            <Mail className="h-5 w-5 text-white md:h-6 md:w-6" />
+        {/* 인스타그램 */}
+        <div className="group transition-all duration-300">
+          <div className="mb-1 flex items-center md:mb-3">
+            <div className="mr-3 rounded-lg bg-white/10 p-2">
+              <Image src="/images/instagram_logo.svg" alt="Instagram" width={20} height={20} />
+            </div>
+            <h3 className="text-xl font-semibold">Instagram</h3>
           </div>
-          <a href={`mailto:${EMAIL}`} className="text-white hover:underline">
+          <button
+            onClick={handleInstagramContact}
+            className="ml-12 text-lg text-white/80 transition-colors hover:text-yellow-300"
+          >
+            @tello_aus
+          </button>
+        </div>
+
+        {/* 이메일 */}
+        <div className="group">
+          <div className="mb-1 flex items-center md:mb-3">
+            <div className="mr-3 rounded-lg bg-white/10 p-2">
+              <Mail className="h-5 w-5 text-white" />
+            </div>
+            <h3 className="text-xl font-semibold">Email</h3>
+          </div>
+          <a
+            href={`mailto:${EMAIL}`}
+            className="ml-12 text-lg text-white/80 transition-colors hover:text-yellow-300"
+          >
             {EMAIL}
           </a>
         </div>
 
-        <div className="flex items-center">
-          <div className="mr-4 flex-shrink-0 rounded-full bg-white/10 p-3">
-            <MapPin className="h-5 w-5 text-white md:h-6 md:w-6" />
+        {/* 주소 */}
+        <div className="group">
+          <div className="mb-1 flex items-center md:mb-3">
+            <div className="mr-3 rounded-lg bg-white/10 p-2">
+              <MapPin className="h-5 w-5 text-white" />
+            </div>
+            <h3 className="text-xl font-semibold">Office</h3>
           </div>
-          <p className="text-white">{ADDRESS}</p>
+          <p className="ml-12 text-lg text-white/80">{ADDRESS}</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

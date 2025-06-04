@@ -339,7 +339,7 @@
         "count": "40회",
         "desc": "수업"
       },
-      "discount67": "67.5% 할인!",
+      "discount68": "68% 할인!",
       "discount65": "65% 할인!"
     },
     "pricing_info": {
@@ -347,45 +347,45 @@
       "subtitle": "내 목표와 일정에 딱 맞는 플랜을 골라보세요.",
       "minutes25": [
         {
-          "price": "$160",
-          "per_lesson": "회당 $40",
+          "price": "140,000",
+          "per_lesson": "회당 35,000₩",
           "valid": "유효기간 30일"
         },
         {
-          "price": "$296",
-          "per_lesson": "회당 $37",
+          "price": "264,000",
+          "per_lesson": "회당 33,000₩",
           "valid": "유효기간 60일"
         },
         {
-          "price": "$680",
-          "per_lesson": "회당 $34",
+          "price": "600,000",
+          "per_lesson": "회당 30,000₩",
           "valid": "유효기간 120일"
         },
         {
-          "price": "$1,200",
-          "per_lesson": "회당 $30",
+          "price": "1,080,000",
+          "per_lesson": "회당 27,000₩",
           "valid": "유효기간 250일"
         }
       ],
       "minutes50": [
         {
-          "price": "$284",
-          "per_lesson": "회당 $71",
+          "price": "252,000",
+          "per_lesson": "회당 63,000₩",
           "valid": "유효기간 30일"
         },
         {
-          "price": "$520",
-          "per_lesson": "회당 $65",
+          "price": "464,000",
+          "per_lesson": "회당 58,000₩",
           "valid": "유효기간 60일"
         },
         {
-          "price": "$1,140",
-          "per_lesson": "회당 $57",
+          "price": "1,020,000",
+          "per_lesson": "회당 51,000₩",
           "valid": "유효기간 120일"
         },
         {
-          "price": "$2,120",
-          "per_lesson": "회당 $53",
+          "price": "1,884,960",
+          "per_lesson": "회당 47,000₩",
           "valid": "유효기간 250일"
         }
       ]
@@ -407,8 +407,8 @@
           "desc": "수업 시작 24시간 전까지는 무료로 수업을 취소하거나 일정을 변경하실 수 있어요."
         }
       ],
-      "25_price": "$13",
-      "50_price": "$25"
+      "25_price": "11,000",
+      "50_price": "22,000"
     }
   },
   "Contact": {
@@ -421,6 +421,7 @@
     "preferred_tutor": "선호하는 튜터",
     "preferred_tutor_placeholder": "선호하는 튜터를 선택해주세요",
     "level": "영어 레벨",
+    "level_placeholder": "영어 레벨을 선택해주세요",
     "level_options": {
       "beginner": "완전 초보예요",
       "lower_intermediate": "간단한 문장은 구사 가능해요",
@@ -428,6 +429,7 @@
       "advanced": "거의 원어민 수준이에요"
     },
     "goals": "수업 목표",
+    "goals_placeholder": "수업 목표를 선택해주세요",
     "goals_options": {
       "native": "원어민처럼 말하고 싶어요",
       "business": "비즈니스 영어를 배우고 싶어요",

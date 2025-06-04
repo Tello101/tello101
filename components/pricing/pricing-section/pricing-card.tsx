@@ -31,18 +31,18 @@ export const PricingCard = ({ card, index, minutesType, delay = 0 }: PricingCard
         className={`overflow-hidden border-2 transition-all hover:shadow-xl ${card.border} flex h-full flex-col rounded-xl`}
       >
         <CardHeader
-          className={`p-6 ${card.bg} flex flex-col items-center border-b text-center ${card.border}`}
+          className={`p-6 ${card.bg} flex flex-col items-center gap-2 border-b text-center ${card.border}`}
         >
           <div className={`${card.label} mx-auto w-fit rounded-full bg-opacity-40 px-4 py-1`}>
             <span className={`text-sm font-bold ${card.text} tracking-wider`}>{`${t(
               `common.${card.lessonKey}.count`,
             )} ${t(`common.${card.lessonKey}.desc`)}`}</span>
           </div>
-          <div className="mt-2 flex items-end justify-center">
-            <span className={cn(`text-[42px] font-extrabold`, card.price)}>
+          <div className="flex items-end justify-end">
+            <span className={cn(`text-4xl font-extrabold`, card.price)}>
               {t(`pricing_info.${minutesType}.${index}.price`)}
             </span>
-            <span className="mb-3 ml-1 text-gray-500">AUD</span>
+            <span className="mb-1 ml-1 text-gray-500">₩</span>
           </div>
         </CardHeader>
 
