@@ -17,7 +17,6 @@ const NAVIGATION_ITEMS = [
   { path: '', translationKey: 'home' },
   { path: '/services', translationKey: 'services' },
   { path: '/tutors', translationKey: 'tutors' },
-  { path: '/pricing', translationKey: 'pricing' },
   { path: '/faq', translationKey: 'faq' },
   { path: '/contact', translationKey: 'contact' },
 ];

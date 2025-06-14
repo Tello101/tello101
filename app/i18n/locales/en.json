@@ -16,10 +16,6 @@
         "title": "1:1 English Tutoring with Australia’s Top Uni Grads | Tello101",
         "description": "Personalized lessons with native tutors from Australia’s top universities — plus instant feedback after class. Build your English skills and your career with Tello101."
       },
-      "pricing": {
-        "title": "1:1 Australian English Lessons from Just ₩10,000 | Tello101",
-        "description": "Learn 1:1 with native tutors from top Australian universities — starting from just ₩10,000 per lesson! Try a trial class today and book sessions anytime that fits your schedule."
-      },
       "faq": {
         "title": "Frequently Asked Questions – English Tutoring FAQ | Tello101",
         "description": "From booking and cancellations to payments and tutor selection — find clear answers to the most common questions about using Tello101, all in one place."
@@ -32,7 +28,6 @@
   },
   "Header": {
     "home": "Home",
-    "pricing": "Pricing",
     "tutors": "Tutors",
     "services": "Services",
     "faq": "FAQ",
@@ -45,7 +40,6 @@
     "contact": "Contact",
     "copyright": "© {year} Tello101 All rights reserved",
     "home": "Home",
-    "pricing": "Pricing",
     "tutors": "Tutors",
     "services": "Services",
     "faq": "FAQ",
@@ -175,18 +169,16 @@
     },
     "steps": {
       "title": "How our platform works",
-      "step1_title": "Step 1: Select a lesson package",
-      "step1_desc": "Choose a package that suits your pace and learning goals.",
-      "step2_title": "Step 2: Choose a tutor",
+      "step2_title": "Step 1: Choose a tutor",
       "step2_desc": "Pick a tutor from our diverse network whose expertise aligns with your interests",
-      "step3_title": "Step 3: Choose a Time",
+      "step3_title": "Step 2: Choose a Time",
       "step3_desc": "Available 365 days a year, with flexible time slots to fit your lifestyle.",
-      "step4_title": "Step 4: Select your lesson content",
+      "step4_title": "Step 3: Select your lesson content",
       "step4_desc": "Choose your lesson focus - Australian topics, open discussions or interest-based content, designed by TESOL-certified academics.",
-      "step5_title": "Step 5: Learn!",
+      "step5_title": "Step 4: Learn!",
       "step5_desc1": "Set your lesson preferences and enter the lesson space.",
       "step5_desc2": "Receive immediate feedback and corrections from your tutor.",
-      "step6_title": "Step 6: Review feedback",
+      "step6_title": "Step 5: Review feedback",
       "step6_desc": "Review personalised lesson notes and feedback from your tutor."
     },
     "lesson_content": {
@@ -313,102 +305,6 @@
     },
     "reviews": {
       "title": "Over <highlight>300+</highlight> satisfied students"
-    }
-  },
-  "Pricing": {
-    "common": {
-      "minutes25": "25 minutes",
-      "minutes50": "50 minutes",
-      "lesson1": {
-        "count": "1",
-        "desc": "lesson"
-      },
-      "lessons4": {
-        "count": "4",
-        "desc": "lessons"
-      },
-      "lessons8": {
-        "count": "8",
-        "desc": "lessons"
-      },
-      "lessons20": {
-        "count": "20",
-        "desc": "lessons"
-      },
-      "lessons40": {
-        "count": "40",
-        "desc": "lessons"
-      },
-      "discount68": "68% off!",
-      "discount65": "65% off!"
-    },
-    "pricing_info": {
-      "title": "Your Path to English Fluency Starts Here",
-      "subtitle": "Find the perfect plan to fit your learning goals and schedule.",
-      "minutes25": [
-        {
-          "price": "140,000",
-          "per_lesson": "35,000₩ per lesson",
-          "valid": "Valid for 30 days"
-        },
-        {
-          "price": "264,000",
-          "per_lesson": "33,000₩ per lesson",
-          "valid": "Valid for 60 days"
-        },
-        {
-          "price": "600,000",
-          "per_lesson": "30,000₩ per lesson",
-          "valid": "Valid for 120 days"
-        },
-        {
-          "price": "1,080,000",
-          "per_lesson": "27,000₩ per lesson",
-          "valid": "Valid for 250 days"
-        }
-      ],
-      "minutes50": [
-        {
-          "price": "252,000",
-          "per_lesson": "63,000₩ per lesson",
-          "valid": "Valid for 30 days"
-        },
-        {
-          "price": "464,000",
-          "per_lesson": "58,000₩ per lesson",
-          "valid": "Valid for 60 days"
-        },
-        {
-          "price": "1,020,000",
-          "per_lesson": "51,000₩ per lesson",
-          "valid": "Valid for 120 days"
-        },
-        {
-          "price": "1,884,960",
-          "per_lesson": "47,000₩ per lesson",
-          "valid": "Valid for 250 days"
-        }
-      ]
-    },
-    "trial_offer": {
-      "title": "Tello101 Trial Offer",
-      "subtitle": "Get a first-hand experience of our tutoring, no strings attached.",
-      "boxes": [
-        {
-          "title": "100% access to Tello101 resources and tutors.",
-          "desc": "Our trial lessons are conducted in the same way as a regular lesson, ensuring you can experience the full quality of our tutors."
-        },
-        {
-          "title": "30-day expiry",
-          "desc": "Use your lesson credits within 30 days. After this, continue learning with one of our other packages."
-        },
-        {
-          "title": "Flexible cancellation",
-          "desc": "Cancel or reschedule your lesson up to 24 hours before the lesson for free."
-        }
-      ],
-      "25_price": "11,000",
-      "50_price": "22,000"
     }
   },
   "Contact": {

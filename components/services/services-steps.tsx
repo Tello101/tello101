@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { LessonPackageSelector } from '@/components/services/lesson-package-selector';
+
 import { TutorCarousel } from '@/components/services/tutor-carousel';
 import { TimeSelector } from '@/components/services/time-selector';
 import { LessonContentSelector } from '@/components/services/lesson-content-selector';
@@ -88,38 +88,32 @@ export const ServicesSteps = () => {
           <SectionHeading title={t('title')} size="md" />
         </div>
 
-        {/* Step 1: Select a lesson package */}
+        {/* Step 1: Choose a tutor */}
         <AnimatedStep step={1}>
-          <StepHeader title={t('step1_title')} desc={t('step1_desc')} />
-          <LessonPackageSelector />
-        </AnimatedStep>
-
-        {/* Step 2: Choose a tutor */}
-        <AnimatedStep step={2}>
           <StepHeader title={t('step2_title')} desc={t('step2_desc')} />
           <TutorCarousel />
         </AnimatedStep>
 
-        {/* Step 3: Choose a Time */}
-        <AnimatedStep step={3}>
+        {/* Step 2: Choose a Time */}
+        <AnimatedStep step={2}>
           <StepHeader title={t('step3_title')} desc={t('step3_desc')} />
           <TimeSelector />
         </AnimatedStep>
 
-        {/* Step 4: Select your lesson content */}
-        <AnimatedStep step={4}>
+        {/* Step 3: Select your lesson content */}
+        <AnimatedStep step={3}>
           <StepHeader title={t('step4_title')} desc={t('step4_desc')} />
           <LessonContentSelector />
         </AnimatedStep>
 
-        {/* Step 5: Learn! */}
-        <AnimatedStep step={5}>
+        {/* Step 4: Learn! */}
+        <AnimatedStep step={4}>
           <StepHeader title={t('step5_title')} desc={t('step5_desc1')} />
           <LearningSection />
         </AnimatedStep>
 
-        {/* Step 6: Review feedback */}
-        <AnimatedStep step={6}>
+        {/* Step 5: Review feedback */}
+        <AnimatedStep step={5}>
           <StepHeader title={t('step6_title')} desc={t('step6_desc')} />
           <ReviewNoteDisplay />
         </AnimatedStep>

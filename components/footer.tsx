@@ -45,11 +45,6 @@ export default function Footer() {
                   {t('tutors', { defaultMessage: 'Tutors' })}
                 </FooterLink>
               </li>
-              <li>
-                <FooterLink href={`/${locale}/pricing`}>
-                  {t('pricing', { defaultMessage: 'Pricing' })}
-                </FooterLink>
-              </li>
             </ul>
           </div>
           <div>

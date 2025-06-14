@@ -44,18 +44,6 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- 가격 페이지 -->
-  <url>
-    <loc>https://tello101.com/ko/pricing</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tello101.com/en/pricing</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
   <!-- FAQ 페이지 -->
   <url>
     <loc>https://tello101.com/ko/faq</loc>
