@@ -31,7 +31,6 @@ export default function TutorsPage() {
       <HeroSection />
       <PointsSection />
       <TutorListSection />
-      <ReviewsSection />
     </div>
   );
 }
